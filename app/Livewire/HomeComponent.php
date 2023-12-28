@@ -1,16 +1,13 @@
 <?php
 
 namespace App\Http\Livewire;
-
+use App\Http\Livewire\Auth;
 
 use Livewire\Component;
 
 class HomeComponent extends Component
 {
-    public function methodName()
-    {
-        // Your Livewire component logic here
-    }
+
 
     public function render()
     {
