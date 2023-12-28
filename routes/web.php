@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeComponent;
+use App\Http\Livewire\HomeComponent; 
 
 
 /*
@@ -18,4 +18,5 @@ use App\Http\Controllers\HomeComponent;
 // Route::get('/', function () {
 //    return view('welcome');
 // });
-Route::get('/',[HomeComponent::class])->name('home.index');
+Route::get('/', HomeComponent::class)->name('home.index');
+

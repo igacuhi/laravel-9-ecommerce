@@ -136,5 +136,8 @@
                 </div>
             </div>
         </div>
+        <livewire:home-component />
+
     </body>
+
 </html>

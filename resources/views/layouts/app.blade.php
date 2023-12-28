@@ -572,7 +572,7 @@
             </div>
         </div>
     </div>        
-    {{%slot}}
+    {{ slot() }}
 
     <footer class="main">
         <section class="newsletter p-30 text-white wow fadeIn animated">
