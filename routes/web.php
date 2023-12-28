@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\HomeComponent;
-use Livewire\Livewire;
 
 
 /*
@@ -19,9 +18,5 @@ use Livewire\Livewire;
 // Route::get('/', function () {
 //    return view('welcome');
 // });
+Route::get('/',App\Http\Livewire\HomeComponent::class)->name('home.index');
 
-Route::get('/', function () {
-    return view('home'); // assuming 'home' is your Livewire component view file
-})->name('home.index');
-
-Livewire::component('home', HomeComponent::class);
