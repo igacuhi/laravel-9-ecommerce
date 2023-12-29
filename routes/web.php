@@ -15,8 +15,8 @@ use App\Http\Livewire\HomeComponent;
 |
 */
 
-// Route::get('/', function () {
-//    return view('welcome');
-// });
+ Route::get('/', function () {
+    return view('welcome');
+ });
 Route::get('/',App\Http\Livewire\HomeComponent::class)->name('home.index');
 
