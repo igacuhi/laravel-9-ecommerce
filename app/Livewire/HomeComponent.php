@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use Livewire\Component;
 
 class HomeComponent extends Component
 {
     //Component logic here
+    public $layout = 'layouts.app';
 
    public function render()
     {

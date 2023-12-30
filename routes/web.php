@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Livewire\HomeComponent;
+use App\Livewire\HomeComponent;
 
 
 /*
