@@ -571,8 +571,7 @@
                 </div>
             </div>
         </div>
-    </div>        
-    {{ slot() }}
+    </div>      
 
     <footer class="main">
         <section class="newsletter p-30 text-white wow fadeIn animated">
