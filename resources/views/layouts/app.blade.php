@@ -572,7 +572,7 @@
             </div>
         </div>
     </div>      
-
+{{ $slot }}
     <footer class="main">
         <section class="newsletter p-30 text-white wow fadeIn animated">
             <div class="container">

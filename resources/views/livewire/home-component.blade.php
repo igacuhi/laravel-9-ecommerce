@@ -1,6 +1,4 @@
-{{-- livewire/home-component.blade.php --}}
-@extends('layouts.app')
-@section('content')
+
 <div>
     <main class="main">
         <section class="home-slider position-relative pt-50">
@@ -1397,5 +1395,4 @@
     </main>
     {{-- If your happiness depends on money, you will never be happy with yourself. --}}
 </div>
-@endsection
 

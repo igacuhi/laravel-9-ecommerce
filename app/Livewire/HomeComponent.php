@@ -5,12 +5,10 @@ namespace App\Livewire;
 use Livewire\Component;
 
 class HomeComponent extends Component
-{
-    //Component logic here
-    public $layout = 'layouts.app';
+{  //Component logic here
 
    public function render()
     {
-        return view('livewire.home-component');
+        return view('livewire.home-component')->layout('layouts.app');
     }
 }

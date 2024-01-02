@@ -15,5 +15,4 @@ use App\Livewire\HomeComponent;
 |
 */
 
-Route::get('/', [HomeComponent::class, '__invoke'])->name('home.index');
-
+Route::get('/',HomeComponent::class)->name('home.index');
