@@ -1,5 +1,8 @@
 <?php
 
+use App\Livewire\CartComponent;
+use App\Livewire\CheckoutComponent;
+use App\Livewire\ShopComponent;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\HomeComponent;
 
@@ -16,3 +19,6 @@ use App\Livewire\HomeComponent;
 */
 
 Route::get('/',HomeComponent::class)->name('home.index');
+Route::get('/shop',ShopComponent::class)->name('shop');
+Route::get('/cart',CartComponent::class)->name('shop-cart');
+Route::get('/checkout',CheckoutComponent::class)->name('shop-checkout');
