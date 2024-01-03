@@ -95,7 +95,7 @@
                                         <form method="post" action="{{route('login')}}">
                                             @csrf
                                             <div class="form-group">
-                                                <input type="text" required="" name="email" placeholder="Your Email" value="old('email')" required autofocus>
+                                                <input type="text" required="" name="email" placeholder="Your Email" value="{{ old('email') }}" required autofocus>
                                             </div>
                                             <div class="form-group">
                                                 <input required="" type="password" name="password" placeholder="Password" required autocomplete="current-password">
