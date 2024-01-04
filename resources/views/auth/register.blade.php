@@ -108,7 +108,7 @@
                                                 <input required="" type="password" name="password" placeholder="Password" required autocomplete="new-password">
                                             </div>
                                             <div class="form-group">
-                                                <input required="" type="password" name="password_confirmation" placeholder="Confirm password">
+                                                <input required="" type="password" name="password_confirmation" placeholder="Confirm password" required autocomplete="new-password">
                                             </div>
                                             <div class="login_footer form-group">
                                                 <div class="chek-form">
@@ -123,7 +123,7 @@
                                                 <button type="submit" class="btn btn-fill-out btn-block hover-up" name="login">Submit &amp; Register</button>
                                             </div>
                                         </form>                                        
-                                        <div class="text-muted text-center">Already have an account? <a href="#">Sign in now</a></div>
+                                        <div class="text-muted text-center">Already have an account? <a href="{{route('login')}}">Sign in now</a></div>
                                     </div>
                                 </div>
                             </div>                            
