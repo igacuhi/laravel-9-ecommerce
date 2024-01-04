@@ -1,3 +1,5 @@
+
 <div>
-    {{ $slot }}
+     {{-- {{ $slot }} --}}
+     @yield('content')
 </div>
