@@ -51,12 +51,18 @@
                         <div class="header-info header-info-right">
                             @auth
                             <ul>                                
-                                <li><i class="fi-rs-user"></i> Auth::user->name <a href="{{ route('register')}}">Sign Up</a></li>
+                                <li><i class="fi-rs-user"></i> {{ Auth::user()->name }} / 
+                                    <form method="POST" action="{{route('logout')}}">
+                                        @csrf
+                                        <a href="{{ route('logout')}}" onclick="event.preventDefault(); this.closest">Logout</a>
+                                </form>
+                            </li>
                             </ul>
-                            @
+                            @else
                             <ul>                                
                                 <li><i class="fi-rs-key"></i><a href="{{route('login')}}">Log In </a>  / <a href="{{ route('register')}}">Sign Up</a></li>
                             </ul>
+                            @endif
                         </div>
                     </div>
                 </div>
