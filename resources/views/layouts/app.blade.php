@@ -49,8 +49,13 @@
                     </div>
                     <div class="col-xl-3 col-lg-4">
                         <div class="header-info header-info-right">
+                            @auth
                             <ul>                                
-                                <li><i class="fi-rs-key"></i><a href="login.html">Log In </a>  / <a href="register.html">Sign Up</a></li>
+                                <li><i class="fi-rs-user"></i> Auth::user->name <a href="{{ route('register')}}">Sign Up</a></li>
+                            </ul>
+                            @
+                            <ul>                                
+                                <li><i class="fi-rs-key"></i><a href="{{route('login')}}">Log In </a>  / <a href="{{ route('register')}}">Sign Up</a></li>
                             </ul>
                         </div>
                     </div>
@@ -712,3 +717,4 @@
 </body>
 
 </html>
+ 
