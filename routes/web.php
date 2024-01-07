@@ -18,11 +18,11 @@ use App\Livewire\HomeComponent;
 */
 
 //Route::view('/', 'welcome');
-Route::get('/',HomeComponent::class)->name('home.index');
-Route::get('/shop',ShopComponent::class)->name('shop');
-Route::get('/cart',CartComponent::class)->name('shop-cart');
-Route::get('/checkout',CheckoutComponent::class)->name('shop-checkout');
-Auth::routes();
+ Route::get('/',HomeComponent::class)->name('home.index');
+ Route::get('/shop',ShopComponent::class)->name('shop');
+ Route::get('/cart',CartComponent::class)->name('shop-cart');
+ Route::get('/checkout',CheckoutComponent::class)->name('shop-checkout');
+ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
