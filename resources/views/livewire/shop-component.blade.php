@@ -62,7 +62,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="product-details.html">
+                                            <a href="{{route('products.details')}}">
                                                 <img class="default-img" src="{{asset('assets/imgs/shop/product-2-1.jpg')}}" alt="">
                                                 <img class="hover-img" src="{{asset('assets/imgs/shop/product-2-2.jpg')}}" alt="">
                                             </a>
@@ -81,7 +81,7 @@
                                         <div class="product-category">
                                             <a href="shop.html">Music</a>
                                         </div>
-                                        <h2><a href="product-details.html">Colorful Pattern Shirts</a></h2>
+                                        <h2><a href="{{route('products.details')}}">Colorful Pattern Shirts</a></h2>
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>90%</span>
@@ -101,7 +101,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="product-details.html">
+                                            <a href="{{route('products.details')}}">
                                                 <img class="default-img" src="assets/imgs/shop/product-3-1.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-3-2.jpg" alt="">
                                             </a>
@@ -120,7 +120,7 @@
                                         <div class="product-category">
                                             <a href="shop.html">Music</a>
                                         </div>
-                                        <h2><a href="product-details.html">Cartoon Astronaut T-Shirts</a></h2>
+                                        <h2><a href="{{route('products.details')}}">Cartoon Astronaut T-Shirts</a></h2>
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>50%</span>
@@ -140,7 +140,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="product-details.html">
+                                            <a href="{{route('products.details')}}">
                                                 <img class="default-img" src="assets/imgs/shop/product-7-1.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-7-2.jpg" alt="">
                                             </a>
@@ -159,7 +159,7 @@
                                         <div class="product-category">
                                             <a href="shop.html">Watch</a>
                                         </div>
-                                        <h2><a href="product-details.html">Plain Striola Shirts</a></h2>
+                                        <h2><a href="{{route('products.details')}}">Plain Striola Shirts</a></h2>
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>95%</span>
@@ -179,7 +179,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="product-details.html">
+                                            <a href="{{route('products.details')}}">
                                                 <img class="default-img" src="assets/imgs/shop/product-1-2.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-1-2.jpg" alt="">
                                             </a>
@@ -198,7 +198,7 @@
                                         <div class="product-category">
                                             <a href="shop.html">Music</a>
                                         </div>
-                                        <h2><a href="product-details.html">Landscape Painting Shirt</a></h2>
+                                        <h2><a href="{{route('products.details')}}">Landscape Painting Shirt</a></h2>
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>70%</span>
@@ -218,7 +218,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="product-details.html">
+                                            <a href="{{route('products.details')}}">
                                                 <img class="default-img" src="assets/imgs/shop/product-4-1.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-3-2.jpg" alt="">
                                             </a>
@@ -237,7 +237,7 @@
                                         <div class="product-category">
                                             <a href="shop.html">Speaker</a>
                                         </div>
-                                        <h2><a href="product-details.html">Letter Print T-Shirt</a></h2>
+                                        <h2><a href="{{route('products.details')}}">Letter Print T-Shirt</a></h2>
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>70%</span>
@@ -257,7 +257,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="product-details.html">
+                                            <a href="{{route('products.details')}}">
                                                 <img class="default-img" src="assets/imgs/shop/product-5-2.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-5-2.jpg" alt="">
                                             </a>
@@ -276,7 +276,7 @@
                                         <div class="product-category">
                                             <a href="shop.html">Camera</a>
                                         </div>
-                                        <h2><a href="product-details.html">Element Pattern Print Shirts</a></h2>
+                                        <h2><a href="{{route('products.details')}}">Element Pattern Print Shirts</a></h2>
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>70%</span>
@@ -296,7 +296,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="product-details.html">
+                                            <a href="{{route('products.details')}}">
                                                 <img class="default-img" src="assets/imgs/shop/product-8-2.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-8-1.jpg" alt="">
                                             </a>
@@ -315,7 +315,7 @@
                                         <div class="product-category">
                                             <a href="shop.html">Phone</a>
                                         </div>
-                                        <h2><a href="product-details.html">Vintage Henley Shirt</a></h2>
+                                        <h2><a href="{{route('products.details')}}">Vintage Henley Shirt</a></h2>
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>98%</span>
@@ -334,7 +334,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="product-details.html">
+                                            <a href="{{route('products.details')}}">
                                                 <img class="default-img" src="assets/imgs/shop/product-11-1.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-11-2.jpg" alt="">
                                             </a>
@@ -350,7 +350,7 @@
                                         <div class="product-category">
                                             <a href="shop.html">Accessories </a>
                                         </div>
-                                        <h2><a href="product-details.html">Cotton Leaf Printed</a></h2>
+                                        <h2><a href="{{route('products.details')}}">Cotton Leaf Printed</a></h2>
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>70%</span>
@@ -370,7 +370,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="product-details.html">
+                                            <a href="{{route('products.details')}}">
                                                 <img class="default-img" src="assets/imgs/shop/product-13-1.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-13-2.jpg" alt="">
                                             </a>
@@ -386,7 +386,7 @@
                                         <div class="product-category">
                                             <a href="shop.html">Accessories </a>
                                         </div>
-                                        <h2><a href="product-details.html">Cotton Leaf Printed</a></h2>
+                                        <h2><a href="{{route('products.details')}}">Cotton Leaf Printed</a></h2>
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>70%</span>
@@ -406,7 +406,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="product-details.html">
+                                            <a href="{{route('products.details')}}">
                                                 <img class="default-img" src="assets/imgs/shop/product-3-1.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-3-2.jpg" alt="">
                                             </a>
@@ -425,7 +425,7 @@
                                         <div class="product-category">
                                             <a href="shop.html">Music</a>
                                         </div>
-                                        <h2><a href="product-details.html">Colorful Pattern Shirts</a></h2>
+                                        <h2><a href="{{route('products.details')}}">Colorful Pattern Shirts</a></h2>
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>90%</span>
@@ -445,7 +445,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="product-details.html">
+                                            <a href="{{route('products.details')}}">
                                                 <img class="default-img" src="assets/imgs/shop/product-2-1.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-2-2.jpg" alt="">
                                             </a>
@@ -464,7 +464,7 @@
                                         <div class="product-category">
                                             <a href="shop.html">Music</a>
                                         </div>
-                                        <h2><a href="product-details.html">Cartoon Astronaut T-Shirts</a></h2>
+                                        <h2><a href="{{route('products.details')}}">Cartoon Astronaut T-Shirts</a></h2>
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>50%</span>
@@ -484,7 +484,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="product-details.html">
+                                            <a href="{{route('products.details')}}">
                                                 <img class="default-img" src="assets/imgs/shop/product-7-2.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-7-1.jpg" alt="">
                                             </a>
@@ -503,7 +503,7 @@
                                         <div class="product-category">
                                             <a href="shop.html">Watch</a>
                                         </div>
-                                        <h2><a href="product-details.html">Plain Striola Shirts</a></h2>
+                                        <h2><a href="{{route('products.details')}}">Plain Striola Shirts</a></h2>
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>95%</span>
@@ -606,7 +606,7 @@
                                     <img src="assets/imgs/shop/thumbnail-3.jpg" alt="#">
                                 </div>
                                 <div class="content pt-10">
-                                    <h5><a href="product-details.html">Chen Cardigan</a></h5>
+                                    <h5><a href="{{route('products.details')}}">Chen Cardigan</a></h5>
                                     <p class="price mb-0 mt-5">$99.50</p>
                                     <div class="product-rate">
                                         <div class="product-rating" style="width:90%"></div>
@@ -618,7 +618,7 @@
                                     <img src="assets/imgs/shop/thumbnail-4.jpg" alt="#">
                                 </div>
                                 <div class="content pt-10">
-                                    <h6><a href="product-details.html">Chen Sweater</a></h6>
+                                    <h6><a href="{{route('products.details')}}">Chen Sweater</a></h6>
                                     <p class="price mb-0 mt-5">$89.50</p>
                                     <div class="product-rate">
                                         <div class="product-rating" style="width:80%"></div>
@@ -630,7 +630,7 @@
                                     <img src="assets/imgs/shop/thumbnail-5.jpg" alt="#">
                                 </div>
                                 <div class="content pt-10">
-                                    <h6><a href="product-details.html">Colorful Jacket</a></h6>
+                                    <h6><a href="{{route('products.details')}}">Colorful Jacket</a></h6>
                                     <p class="price mb-0 mt-5">$25</p>
                                     <div class="product-rate">
                                         <div class="product-rating" style="width:60%"></div>
