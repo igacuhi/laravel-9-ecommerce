@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\DetailsComponent;
 use App\Livewire\User\UserDashboard;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\CartComponent;
@@ -24,6 +25,7 @@ use App\Livewire\Admin\AdminDashboard;
  Route::get('/shop',ShopComponent::class)->name('shop');
  Route::get('/cart',CartComponent::class)->name('shop-cart');
  Route::get('/checkout',CheckoutComponent::class)->name('shop-checkout');
+ Route::get('/product/{slug}',DetailsComponent::class)->name('product.details');
  Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
