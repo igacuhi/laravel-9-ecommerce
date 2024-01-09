@@ -9,7 +9,7 @@ use illuminate\support\Facades\Auth;
 
 class AuthAdmin
 {
-    /**
+    /**coding logic
      * Handle an incoming request.
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
