@@ -62,7 +62,10 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
+                                         @dump($product)
+                                            @if(isset($product))
                                             <a href="{{route('products.details',['slug'=>$product->slug])}}">
+                                            @endif  
                                                 <img class="default-img" src="{{asset('assets/imgs/shop/product-2-1.jpg')}}" alt="">
                                                 <img class="hover-img" src="{{asset('assets/imgs/shop/product-2-2.jpg')}}" alt="">
                                             </a>
