@@ -10,7 +10,7 @@ class DetailsComponent extends Component
     public $slug;
     public $product;
     public function mount($slug)
-    {   //component logic
+    {   
         $this->slug = $slug;
         $this->product = Product::where('slug', $this->slug)->first();
 
