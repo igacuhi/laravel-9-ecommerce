@@ -342,7 +342,11 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="{{route('products.details',['slug'=>$product->slug])}}">
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif    
                                                 <img class="default-img" src="assets/imgs/shop/product-8-2.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-8-1.jpg" alt="">
                                             </a>
@@ -361,7 +365,11 @@
                                         <div class="product-category">
                                             <a href="shop.html">Phone</a>
                                         </div>
-                                        <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Vintage Henley Shirt</a></h2>
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>98%</span>
@@ -380,7 +388,11 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="{{route('products.details',['slug'=>$product->slug])}}">
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif
                                                 <img class="default-img" src="assets/imgs/shop/product-11-1.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-11-2.jpg" alt="">
                                             </a>
@@ -396,7 +408,11 @@
                                         <div class="product-category">
                                             <a href="shop.html">Accessories </a>
                                         </div>
-                                        <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Cotton Leaf Printed</a></h2>
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>70%</span>
@@ -416,7 +432,11 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="{{route('products.details',['slug'=>$product->slug])}}">
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif  
                                                 <img class="default-img" src="assets/imgs/shop/product-13-1.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-13-2.jpg" alt="">
                                             </a>
@@ -432,7 +452,11 @@
                                         <div class="product-category">
                                             <a href="shop.html">Accessories </a>
                                         </div>
-                                        <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Cotton Leaf Printed</a></h2>
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>70%</span>
@@ -452,7 +476,11 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="{{route('products.details',['slug'=>$product->slug])}}">
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif    
                                                 <img class="default-img" src="assets/imgs/shop/product-3-1.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-3-2.jpg" alt="">
                                             </a>
@@ -471,7 +499,11 @@
                                         <div class="product-category">
                                             <a href="shop.html">Music</a>
                                         </div>
-                                        <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>90%</span>
@@ -491,7 +523,11 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="{{route('products.details',['slug'=>$product->slug])}}">
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif   
                                                 <img class="default-img" src="assets/imgs/shop/product-2-1.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-2-2.jpg" alt="">
                                             </a>
@@ -510,7 +546,11 @@
                                         <div class="product-category">
                                             <a href="shop.html">Music</a>
                                         </div>
-                                        <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Cartoon Astronaut T-Shirts</a></h2>
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>50%</span>
@@ -530,7 +570,11 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="{{route('products.details',['slug'=>$product->slug])}}">
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif   
                                                 <img class="default-img" src="assets/imgs/shop/product-7-2.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-7-1.jpg" alt="">
                                             </a>
@@ -549,7 +593,11 @@
                                         <div class="product-category">
                                             <a href="shop.html">Watch</a>
                                         </div>
-                                        <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Plain Striola Shirts</a></h2>
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>95%</span>
@@ -652,7 +700,11 @@
                                     <img src="assets/imgs/shop/thumbnail-3.jpg" alt="#">
                                 </div>
                                 <div class="content pt-10">
-                                    <h5><a href="{{route('products.details',['slug'=>$product->slug])}}">Chen Cardigan</a></h5>
+                                @if ($product)
+                                            <h6><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h6>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif    
                                     <p class="price mb-0 mt-5">$99.50</p>
                                     <div class="product-rate">
                                         <div class="product-rating" style="width:90%"></div>
@@ -664,7 +716,11 @@
                                     <img src="assets/imgs/shop/thumbnail-4.jpg" alt="#">
                                 </div>
                                 <div class="content pt-10">
-                                    <h6><a href="{{route('products.details',['slug'=>$product->slug])}}">Chen Sweater</a></h6>
+                                @if ($product)
+                                            <h6><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h6>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif   
                                     <p class="price mb-0 mt-5">$89.50</p>
                                     <div class="product-rate">
                                         <div class="product-rating" style="width:80%"></div>
@@ -676,7 +732,11 @@
                                     <img src="assets/imgs/shop/thumbnail-5.jpg" alt="#">
                                 </div>
                                 <div class="content pt-10">
-                                    <h6><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Jacket</a></h6>
+                                @if ($product)
+                                <h6><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Jacket</a></h6>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif    
                                     <p class="price mb-0 mt-5">$25</p>
                                     <div class="product-rate">
                                         <div class="product-rating" style="width:60%"></div>
