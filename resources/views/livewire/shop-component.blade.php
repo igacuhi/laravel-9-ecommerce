@@ -84,7 +84,11 @@
                                         <div class="product-category">
                                             <a href="shop.html">Music</a>
                                         </div>
-                                        <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>90%</span>
@@ -104,8 +108,11 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="{{route('products.details',['slug'=>$product->slug])}}">
-                                                <img class="default-img" src="assets/imgs/shop/product-3-1.jpg" alt="">
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif                                                <img class="default-img" src="assets/imgs/shop/product-3-1.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-3-2.jpg" alt="">
                                             </a>
                                         </div>
@@ -123,7 +130,11 @@
                                         <div class="product-category">
                                             <a href="shop.html">Music</a>
                                         </div>
-                                        <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Cartoon Astronaut T-Shirts</a></h2>
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>50%</span>
@@ -143,7 +154,11 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="{{route('products.details',['slug'=>$product->slug])}}">
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif
                                                 <img class="default-img" src="assets/imgs/shop/product-7-1.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-7-2.jpg" alt="">
                                             </a>
@@ -162,7 +177,11 @@
                                         <div class="product-category">
                                             <a href="shop.html">Watch</a>
                                         </div>
-                                        <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Plain Striola Shirts</a></h2>
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>95%</span>
@@ -182,7 +201,11 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="{{route('products.details',['slug'=>$product->slug])}}">
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif 
                                                 <img class="default-img" src="assets/imgs/shop/product-1-2.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-1-2.jpg" alt="">
                                             </a>
@@ -201,7 +224,11 @@
                                         <div class="product-category">
                                             <a href="shop.html">Music</a>
                                         </div>
-                                        <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Landscape Painting Shirt</a></h2>
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>70%</span>
@@ -221,7 +248,11 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="{{route('products.details',['slug'=>$product->slug])}}">
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif   
                                                 <img class="default-img" src="assets/imgs/shop/product-4-1.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-3-2.jpg" alt="">
                                             </a>
@@ -240,7 +271,11 @@
                                         <div class="product-category">
                                             <a href="shop.html">Speaker</a>
                                         </div>
-                                        <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Letter Print T-Shirt</a></h2>
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>70%</span>
@@ -260,7 +295,11 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            <a href="{{route('products.details',['slug'=>$product->slug])}}">
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif    
                                                 <img class="default-img" src="assets/imgs/shop/product-5-2.jpg" alt="">
                                                 <img class="hover-img" src="assets/imgs/shop/product-5-2.jpg" alt="">
                                             </a>
@@ -279,7 +318,11 @@
                                         <div class="product-category">
                                             <a href="shop.html">Camera</a>
                                         </div>
-                                        <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Element Pattern Print Shirts</a></h2>
+                                        @if ($product)
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                        @else
+                                         <h2>product not available</h2>
+                                        @endif
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>70%</span>
