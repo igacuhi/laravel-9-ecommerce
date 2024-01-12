@@ -8,10 +8,9 @@ class ShopComponent extends Component
 {
     public $product;  // Define the property
 
-    public function mount($product)
-    {
-        // Fetch or set the product data here
-        $this->product = Product::find(1);  // Example fetching from database
+    public function mount($product = null)
+    {   
+        $this->product = $product;
     }
 
     public function render()
