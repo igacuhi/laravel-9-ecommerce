@@ -1,0 +1,373 @@
+[33mcommit fd19da199c129017a8c66b2d4920e6acceb13c92[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Fri Jan 12 23:45:19 2024 +0300
+
+    debug
+
+[33mcommit 6d02629692654a5cb1561c877aedbb0d76cd442e[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Fri Jan 12 23:05:59 2024 +0300
+
+    debug
+
+[33mcommit d598059b0f28e1b04431c4fe6242cfc4f1d092cc[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Fri Jan 12 23:01:42 2024 +0300
+
+    debug
+
+[33mcommit a0070e64a29bb8ce007b28afdcc71d0a68093332[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Fri Jan 12 22:53:48 2024 +0300
+
+    debug
+
+[33mcommit b1bde5ed25bd4825481e21e5b502f06fb2a4f847[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Fri Jan 12 22:43:04 2024 +0300
+
+    debug
+
+[33mcommit a02e805b9c41b636dce5d835467a0d6bba1615c2[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Fri Jan 12 22:35:39 2024 +0300
+
+    debug
+
+[33mcommit 2bef226b2c1a3c2b640a568483b8866e2e8a9cd4[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Fri Jan 12 21:46:34 2024 +0300
+
+    debug
+
+[33mcommit 6b69e37c67ec33813eca313fd1da79957803657d[m
+Author: ian_cycles <ian_cycles@kali.kali>
+Date:   Thu Jan 11 23:54:35 2024 +0300
+
+    products table migrations
+
+[33mcommit 3be0f772d2f1a38b69f64a6dae60844c41669e17[m
+Author: ian_cycles <ian_cycles@kali.kali>
+Date:   Thu Jan 11 23:34:29 2024 +0300
+
+    products table migrations
+
+[33mcommit fa102a9992a1c6f267ae6fb8684ccc4b184fcaad[m
+Merge: e2d898d 398a253
+Author: ian_cycles <ian_cycles@kali.kali>
+Date:   Thu Jan 11 23:17:31 2024 +0300
+
+    conflicts debugging
+
+[33mcommit e2d898d981217aceaec44abe56c472cd8773a5d2[m[33m ([m[1;32mmaster[m[33m)[m
+Author: ian_cycles <ian_cycles@kali.kali>
+Date:   Thu Jan 11 22:25:51 2024 +0300
+
+    .env file
+
+[33mcommit 398a25369ba90ae3acafbfde5e0527c7f81f6b2a[m
+Author: igacuhi <119714279+igacuhi@users.noreply.github.com>
+Date:   Wed Jan 10 23:00:12 2024 +0300
+
+    Update AdminDashboard.php
+
+[33mcommit 9015a1b0256653346f4ce3aeb510aa76b6b9747a[m
+Author: igacuhi <119714279+igacuhi@users.noreply.github.com>
+Date:   Tue Jan 9 17:47:08 2024 +0300
+
+    Update AuthAdmin.php
+
+[33mcommit bf4b3ae3e641ac6c0d27f38610f5f9096c6de27f[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Mon Jan 8 18:38:10 2024 +0300
+
+    create product details page
+
+[33mcommit 1811a2d248c9bb570dc43dc71cdcd3f0c3c978a3[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Mon Jan 8 18:13:21 2024 +0300
+
+    create product details page:change the shop-component.blade.php and deailscomponent
+
+[33mcommit aff7f43e6c4760d4ecb51e1d63c9e2587e578886[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Mon Jan 8 17:28:22 2024 +0300
+
+    create product details page:creating route for products page
+
+[33mcommit 6a11be65f18240e92d0daa6d67e37801a5ca1530[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Mon Jan 8 16:31:58 2024 +0300
+
+    create product details page:creating livewire component Detailscomponent
+
+[33mcommit 1585bfa0eb30846205f71ce04dd3cff4202cc74d[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Mon Jan 8 16:09:04 2024 +0300
+
+    wrap up on admin and user authentication:        return view('livewire.user.user-dashboard')->layout('layouts.app');
+
+[33mcommit 6b96f279db8d531acc83ef79c8ee5483cf14af79[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Mon Jan 8 14:48:32 2024 +0300
+
+    admin and user authentication:create routes in the app.blade.php
+
+[33mcommit 840b20e3ef23dc7c6db79b3f9ff00d4e432978a0[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Mon Jan 8 14:28:45 2024 +0300
+
+    admin and user authentication:create routes for admin and user dashboard livewire components
+
+[33mcommit c608a3b592479a7a804bdf35bb042caee7d78f89[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Mon Jan 8 14:10:59 2024 +0300
+
+    admin and user authentication:create admin and user dashboard livewire components
+
+[33mcommit 25cb55eb2fc55c69c495ac706c7aa6b3e698847d[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Mon Jan 8 13:59:58 2024 +0300
+
+    admin and user authentication:edit  middleware  AuthAdmin and kernel.php add  for authadmin
+
+[33mcommit d93b6d7e5057dbe54dc0cd8409a846dd31ad07ce[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Mon Jan 8 13:46:08 2024 +0300
+
+    admin and user authentication:create middleware for AuthAdmin
+
+[33mcommit 23a86dfea2bc203bc8993aebf8b3a3a83683d5ea[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Sun Jan 7 22:25:09 2024 +0300
+
+    admin and user authentication:app.blade.php:login and register link routing
+
+[33mcommit 21b0bf71f29ea4fdd4b52545dc4e4ffc5f3acb3f[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Sun Jan 7 22:23:47 2024 +0300
+
+    admin and user authentication:app.blade.php:login and register link routing
+
+[33mcommit 4f75d57b6e892a668adc5ffd6f2adc01f769dbe2[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Sun Jan 7 22:17:25 2024 +0300
+
+    admin and user authentication:app.blade.php:login and register link routing
+
+[33mcommit 1669635b0c5bbee7e7d8451a5928188bb124dc04[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Sun Jan 7 22:07:05 2024 +0300
+
+    admin and user authentication:navigation.blade.php
+
+[33mcommit ae3ab44a23d9f77d912fbec9ae47126e551796e7[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Sat Jan 6 23:36:59 2024 +0300
+
+    admin and user authentication:navigation.blade.php
+
+[33mcommit e9f008c46b31dc2e95e4a6cfafbd9a033dadee60[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Sat Jan 6 22:37:01 2024 +0300
+
+    admin and user authentication:npm install and npm run build delete the new app.blade.php and rename app_1.blade.php
+
+[33mcommit 726398ba016b5399a965b89203a258896a7d7b7e[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Sat Jan 6 12:17:21 2024 +0300
+
+    admin and user authentication:database migrations
+
+[33mcommit 03b7f32edecc4795423a596c47f1674840583acd[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Fri Jan 5 20:23:07 2024 +0300
+
+    admin and user authentication:breeze install,edit web.php,composer require laravel/breeze --dev
+
+[33mcommit 4deb383ad6210e0a0f9df1fefdf84928647ff738[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Fri Jan 5 19:39:46 2024 +0300
+
+    changing register blade:header & footer
+
+[33mcommit a7752af827494f9f82de7c65d90ed87ba995f26f[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Fri Jan 5 19:34:17 2024 +0300
+
+    changing login blade:header & footer
+
+[33mcommit 23e094f20cb6c93b513a69812beede1e31aa7fa6[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Thu Jan 4 21:17:51 2024 +0300
+
+    changing register
+
+[33mcommit 6fd332f4017764c53ba15e813a2639eb68f6cde5[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Thu Jan 4 16:19:33 2024 +0300
+
+    changing register blade
+
+[33mcommit 84b0d8ab0b0e7baafda67c8c61160df7ffc05b2e[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Thu Jan 4 16:16:32 2024 +0300
+
+    changing register blade
+
+[33mcommit 8c960e005b41c38fc0ce953e19151ff5094a485c[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Wed Jan 3 23:19:46 2024 +0300
+
+    changing login
+
+[33mcommit 3269fe23e2ea21e984f49351f7588e1de4c55688[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Wed Jan 3 23:05:41 2024 +0300
+
+    changing login
+
+[33mcommit 8ae4c3ec2d176986fb7faee3660ec0ac54714a1d[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Wed Jan 3 22:51:10 2024 +0300
+
+    changing login
+
+[33mcommit 195cd16c0c0ae01d28a653f8f969634a3e709e6b[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Wed Jan 3 22:34:22 2024 +0300
+
+    changing login
+
+[33mcommit 09c3fc1cee5fbc75530c20f6c9b99d816ebe91e7[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Wed Jan 3 22:17:23 2024 +0300
+
+    changing login and register page layout
+
+[33mcommit d8ced4782e6b3cffa2a4e7e6ea3232e7c082e147[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Tue Jan 2 15:13:49 2024 +0300
+
+     changing the login and register page layout:creating the auth directory in the resources\views
+
+[33mcommit dcc0b10d7e05933b2214b376258345c70e8d8e2e[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Tue Jan 2 14:50:26 2024 +0300
+
+    created the routes for shop,cart and checkout page:        return view('livewire.shop-component')->layout('layouts.app');
+    in the app\livewire\components.php
+
+[33mcommit 9505ec14d4203b0fb99fb99593ec9def85995c02[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Tue Jan 2 14:43:43 2024 +0300
+
+    created the routes for shop,cart and checkout page:
+
+[33mcommit c1a17e33c14bd143ed0ed309001b93a14555e028[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Tue Jan 2 14:34:02 2024 +0300
+
+    created the shop,cart and checkout page:edited the chechkout-component.blade.php with main content of the chechkout html template
+
+[33mcommit 9a7b348b1654dd42c01da8af66eeeacadfe928ee[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Tue Jan 2 14:25:19 2024 +0300
+
+    created the shop,cart and checkout page:edited the cart-component.blade.php with main content of the cart html template
+
+[33mcommit eed40e0e3c28d3e158d50e4b9ffa97fcf1bbb760[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Tue Jan 2 13:03:12 2024 +0300
+
+    created the shop,cart and checkout page:edited the shop-component.php with main content of the shop html template
+
+[33mcommit f97765f0f9837c9c59a38bc9ace9d149ab2868df[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Tue Jan 2 12:54:44 2024 +0300
+
+    created the shop,cart and checkout page:created livewire components for shop,cart and checkout
+
+[33mcommit 164d714dcec123afcac39ca01678e1e91afeb304[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Tue Jan 2 12:24:17 2024 +0300
+
+     wrap up creation of project and layout setup
+
+[33mcommit 9eb308b860ea9e6beb0c91b2e68a861ac9fcdb3e[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Mon Jan 1 19:11:18 2024 +0300
+
+    created the first livewire component for home
+
+[33mcommit 7a5d0d26903af7c58bea88bfc3c3511cbc9432cc[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Sun Dec 31 17:11:29 2023 +0300
+
+    created the first livewire component for home
+
+[33mcommit 7acdb6492773632da1905900f8cb552b8f01829b[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Sat Dec 30 14:25:05 2023 +0300
+
+    created the first livewire component for home
+
+[33mcommit 491ffcc6ead30eb83e3eb23063e6c202b10b50ce[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Sat Dec 30 12:55:10 2023 +0300
+
+    created the first livewire component for home
+
+[33mcommit be7edf1752547a3ede20af8d341d34922cff1a0a[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Fri Dec 29 20:56:30 2023 +0300
+
+    created the first livewire component for home
+
+[33mcommit 0fc2b6fb34df5bd4dae94c5000ab31df3f80aef5[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Thu Dec 28 19:41:18 2023 +0300
+
+    created the first livewire component for home
+
+[33mcommit b71891bbc488d6505e5325bcab1e303672ef94e1[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Thu Dec 28 19:14:07 2023 +0300
+
+    created the first livewire component for home
+
+[33mcommit 4f5cfd63a2e9622a85490f83477fcbc5cea712f9[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Thu Dec 28 18:54:50 2023 +0300
+
+    created the first livewire component for home
+
+[33mcommit 72a76cdcea7c47d3a168fb8cebf8ead578598a57[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Sun Dec 24 21:30:07 2023 +0300
+
+    created the first livewire component for home
+
+[33mcommit f82cafeb28ac3aebf79fd827bf3134ce25a71b9c[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Sun Dec 24 20:47:37 2023 +0300
+
+    created app.blade.php(index.html) in the layouts
+
+[33mcommit bebf389e84a59afb51168551d13b50212436bc2b[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Sun Dec 24 20:27:05 2023 +0300
+
+    created app.blade.php(index.html) in the layouts
+
+[33mcommit 863084796cafbbb68a829b99825c024a83feae3d[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Sun Dec 24 20:17:15 2023 +0300
+
+    created the db and changed the db name in the .env file
+
+[33mcommit 84bfe22b2cc60a103e685798a9468471d86b68b6[m
+Author: igacuhi <igacuhi@gmail.com>
+Date:   Sat Dec 23 14:24:35 2023 +0300
+
+    starting up a laravel project
