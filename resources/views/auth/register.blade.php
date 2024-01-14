@@ -3,7 +3,6 @@
 @section('content')
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>Surfside Media</title>
@@ -19,7 +18,6 @@
     <link rel="stylesheet" href="{{asset('assets/css/custom.css')}}">
     @livewireStyles
 </head>
-
 <body>
      <header class="header-area header-style-1 header-height-2">
         <div class="header-top header-top-ptb-1 d-none d-lg-block">
