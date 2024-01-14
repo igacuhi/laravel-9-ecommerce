@@ -26,7 +26,12 @@ use App\Livewire\Admin\AdminDashboard;
  Route::get('/cart',CartComponent::class)->name('shop-cart');
  Route::get('/checkout',CheckoutComponent::class)->name('shop-checkout');
  Route::get('/product/{slug}',DetailsComponent::class)->name('product.details');
- 
+ Route::get('/shop/{product}', function ($product) {
+    return view('livewire.shop-component', [
+        'product' => $product
+    ]);
+});
+
  Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
