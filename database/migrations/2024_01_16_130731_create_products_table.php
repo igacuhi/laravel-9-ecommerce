@@ -22,10 +22,10 @@ return new class extends Migration
             $table->string('SKU');
             $table->enum('stock_status',['instock','outofstock']);;
             $table->boolean('featured')->default(false);
-            $table->unsignedInterger()->default(10);
+            $table->unsignedInteger()->default(10);
             $table->string('image');
             $table->text('images');
-            $table->bigInterger('category_id')->unsigned()->nullable();
+            $table->bigInteger('category_id')->unsigned()->nullable();
             $table->timestamps();
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
         });
