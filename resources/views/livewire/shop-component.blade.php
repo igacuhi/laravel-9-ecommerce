@@ -58,6 +58,7 @@
                             </div>
                         </div>
                         <div class="row product-grid-3">
+                            @foreach($products as $product)
                             <div class="col-lg-4 col-md-4 col-6 col-sm-6">
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
@@ -84,7 +85,7 @@
                                             <a href="shop.html">Music</a>
                                         </div>
                                         @if ($product)
-                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">Colorful Pattern Shirts</a></h2>
+                                            <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">{{$product->name}}</a></h2>
                                         @else
                                          <h2>product not available</h2>
                                         @endif
@@ -94,8 +95,8 @@
                                             </span>
                                         </div>
                                         <div class="product-price">
-                                            <span>$238.85 </span>
-                                            <span class="old-price">$245.8</span>
+                                            <span>${{$product->price}} </span>
+                                          <!--  <span class="old-price">$245.8</span>  -->
                                         </div>
                                         <div class="product-action-1 show">
                                             <a aria-label="Add To Cart" class="action-btn hover-up" href="shop-cart.php"><i class="fi-rs-shopping-bag-add"></i></a>
@@ -103,6 +104,7 @@
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
                             <div class="col-lg-4 col-md-4 col-6 col-sm-6">
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
