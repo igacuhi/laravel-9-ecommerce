@@ -108,8 +108,9 @@
                         </div>
                         <!--pagination-->
                         <div class="pagination-area mt-15 mb-sm-5 mb-lg-0">
-                            {{$product->links()}}
-                            <!-- <nav aria-label="Page navigation example">
+                           {{$product->links()}}
+
+                        <!--<nav aria-label="Page navigation example">
                                 <ul class="pagination justify-content-start">
                                     <li class="page-item active"><a class="page-link" href="#">01</a></li>
                                     <li class="page-item"><a class="page-link" href="#">02</a></li>
