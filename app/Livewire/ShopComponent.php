@@ -17,7 +17,7 @@ class ShopComponent extends Component
     use WithPagination;
     public function render()
     {
-        $products = Product::pagination(12);
+        $products = Product::paginate(12);
         return view('livewire.shop-component', ['product' => $this->product])->layout('layouts.app');
     }
 }
