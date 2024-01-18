@@ -108,7 +108,7 @@
                         </div>
                         <!--pagination-->
                         <div class="pagination-area mt-15 mb-sm-5 mb-lg-0">
-                           {{$product->links()}}
+                           {{$products->links()}}
 
                         <!--<nav aria-label="Page navigation example">
                                 <ul class="pagination justify-content-start">
