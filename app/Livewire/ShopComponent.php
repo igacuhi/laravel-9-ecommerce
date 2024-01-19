@@ -9,7 +9,6 @@ use App\Models\Product;
 class ShopComponent extends Component
 {
     public $product;  // Define the property
-
     public function mount($product = null)
     {   
         $this->product = $product;
