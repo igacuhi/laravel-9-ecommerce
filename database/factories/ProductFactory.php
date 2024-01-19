@@ -14,7 +14,6 @@ class ProductFactory extends Factory
      *
      * @return array<string, mixed>
      */
-
     public function definition(): array
     {
         $product_name = $this->make()->unique()->words($nb=6,$asText = true);
