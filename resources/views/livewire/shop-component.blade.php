@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="breadcrumb">
                     <a href="index.html" rel="nofollow">Home</a>
-                    <span></span> Shop
+                    <span>Shop</span> 
                 </div>
             </div>
         </div>
@@ -66,8 +66,9 @@
                                             @if(isset($product))
                                             <a href="{{route('products.details',['slug'=>$product->slug])}}">
                                             @endif  
-                                                <img class="default-img" src="{{asset('assets/imgs/shop/product-')}} {{$product->id}}-1.jpg')}}" alt="{{$product->name}}">
-                                                <img class="hover-img" src="{{asset('assets/imgs/shop/product-')}} {{$product->id}}-2.jpg')}}" alt="{{$product->name}}">
+                                            <img class="default-img" src="{{ asset('assets/imgs/shop/product-' . $product->id . '-1.jpg') }}" alt="{{ $product->name }}">
+                                            <img class="hover-img" src="{{ asset('assets/imgs/shop/product-' . $product->id . '-2.jpg') }}" alt="{{ $product->name }}">
+        
                                             </a>
                                         </div>
                                         <div class="product-action-1">
