@@ -4,7 +4,6 @@ namespace App\Livewire;
 use Livewire\Component;
 use App\Models\Product;
 
-
 class DetailsComponent extends Component
 {
     public $slug;
@@ -17,6 +16,7 @@ class DetailsComponent extends Component
     }
     public function render()
     {
+        $product = Product::where('slug',$this->slug)->first();
         return view('livewire.details-component', ['product' => $this->product]);
 
     }
