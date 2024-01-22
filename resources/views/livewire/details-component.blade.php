@@ -1,5 +1,5 @@
 <div>
-    <main class="main">
+<main class="main">
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
@@ -21,56 +21,52 @@
                                         <!-- MAIN SLIDES -->
                                         <div class="product-image-slider">
                                             <figure class="border-radius-10">
-                                                @if ($product)
-                                                <img src="{{asset('assets/imgs/shop/product-16-')}} {{$product->id}}-2.jpg" alt="product image">
-                                                @endif
+                                                <img src="assets/imgs/shop/product-16-2.jpg" alt="product image">
                                             </figure>
                                             <figure class="border-radius-10">
-                                                <img src="{{asset('assets/imgs/shop/product-16-1.jpg')}}" alt="product image">
+                                                <img src="assets/imgs/shop/product-16-1.jpg" alt="product image">
                                             </figure>
                                             <figure class="border-radius-10">
-                                                <img src="{{asset('assets/imgs/shop/product-16-3.jpg')}}" alt="product image">
+                                                <img src="assets/imgs/shop/product-16-3.jpg" alt="product image">
                                             </figure>
                                             <figure class="border-radius-10">
-                                                <img src="{{asset('assets/imgs/shop/product-16-4.jpg')}}" alt="product image">
+                                                <img src="assets/imgs/shop/product-16-4.jpg" alt="product image">
                                             </figure>
                                             <figure class="border-radius-10">
-                                                <img src="{{asset('assets/imgs/shop/product-16-5.jpg')}}" alt="product image">
+                                                <img src="assets/imgs/shop/product-16-5.jpg" alt="product image">
                                             </figure>
                                             <figure class="border-radius-10">
-                                                <img src="{{asset('assets/imgs/shop/product-16-6.jpg')}}" alt="product image">
+                                                <img src="assets/imgs/shop/product-16-6.jpg" alt="product image">
                                             </figure>
                                             <figure class="border-radius-10">
-                                                <img src="{{asset('assets/imgs/shop/product-16-7.jpg')}}" alt="product image">
+                                                <img src="assets/imgs/shop/product-16-7.jpg" alt="product image">
                                             </figure>
                                         </div>
                                         <!-- THUMBNAILS -->
                                         <div class="slider-nav-thumbnails pl-15 pr-15">
-                                            <div><img src="{{asset('assets/imgs/shop/thumbnail-3.jpg')}}" alt="product image"></div>
-                                            <div><img src="{{asset('assets/imgs/shop/thumbnail-4.jpg')}}" alt="product image"></div>
-                                            <div><img src="{{asset('assets/imgs/shop/thumbnail-5.jpg')}}" alt="product image"></div>
-                                            <div><img src="{{asset('assets/imgs/shop/thumbnail-6.jpg')}}" alt="product image"></div>
-                                            <div><img src="{{asset('assets/imgs/shop/thumbnail-7.jpg')}}" alt="product image"></div>
-                                            <div><img src="{{asset('assets/imgs/shop/thumbnail-8.jpg')}}" alt="product image"></div>
-                                            <div><img src="{{asset('assets/imgs/shop/thumbnail-9.jpg')}}" alt="product image"></div>
+                                            <div><img src="assets/imgs/shop/thumbnail-3.jpg" alt="product image"></div>
+                                            <div><img src="assets/imgs/shop/thumbnail-4.jpg" alt="product image"></div>
+                                            <div><img src="assets/imgs/shop/thumbnail-5.jpg" alt="product image"></div>
+                                            <div><img src="assets/imgs/shop/thumbnail-6.jpg" alt="product image"></div>
+                                            <div><img src="assets/imgs/shop/thumbnail-7.jpg" alt="product image"></div>
+                                            <div><img src="assets/imgs/shop/thumbnail-8.jpg" alt="product image"></div>
+                                            <div><img src="assets/imgs/shop/thumbnail-9.jpg" alt="product image"></div>
                                         </div>
                                     </div>
                                     <!-- End Gallery -->
                                     <div class="social-icons single-share">
                                         <ul class="text-grey-5 d-inline-block">
                                             <li><strong class="mr-10">Share this:</strong></li>
-                                            <li class="social-facebook"><a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-facebook.svg')}}" alt=""></a></li>
-                                            <li class="social-twitter"> <a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-twitter.svg')}}" alt=""></a></li>
-                                            <li class="social-instagram"><a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-instagram.svg')}}" alt=""></a></li>
-                                            <li class="social-linkedin"><a href="#"><img src="{{asset('assets/imgs/theme/icons/icon-pinterest.svg')}}" alt=""></a></li>
+                                            <li class="social-facebook"><a href="#"><img src="assets/imgs/theme/icons/icon-facebook.svg" alt=""></a></li>
+                                            <li class="social-twitter"> <a href="#"><img src="assets/imgs/theme/icons/icon-twitter.svg" alt=""></a></li>
+                                            <li class="social-instagram"><a href="#"><img src="assets/imgs/theme/icons/icon-instagram.svg" alt=""></a></li>
+                                            <li class="social-linkedin"><a href="#"><img src="assets/imgs/theme/icons/icon-pinterest.svg" alt=""></a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 col-xs-12">
                                     <div class="detail-info">
-                                        @if ($product)
-                                        <h2 class="title-detail">{{$product->name}}</h2>
-                                         @endif
+                                        <h2 class="title-detail">Colorful Pattern Shirts HD450</h2>
                                         <div class="product-detail-rating">
                                             <div class="pro-details-brand">
                                                 <span> Brands: <a href="shop.html">Bootstrap</a></span>
@@ -85,25 +81,22 @@
                                         </div>
                                         <div class="clearfix product-price-cover">
                                             <div class="product-price primary-color float-left">
-                                            @if ($product)
-    <ins><span class="text-brand">${{$product->regular_price}}</span></ins>
-@endif
-                                                <!-- <ins><span class="old-price font-md ml-15">$200.00</span></ins> -->
-                                                <!-- <span class="save-price  font-md color3 ml-15">25% Off</span> -->
+                                                <ins><span class="text-brand">$120.00</span></ins>
+                                                <ins><span class="old-price font-md ml-15">$200.00</span></ins>
+                                                <span class="save-price  font-md color3 ml-15">25% Off</span>
                                             </div>
                                         </div>
                                         <div class="bt-1 border-color-1 mt-15 mb-15"></div>
                                         <div class="short-desc mb-30">
-                                        @if ($product)
-                                            <p>{{$product->short_description}}</p>
-                                        @endif                                        </div>
-                                        <!-- <div class="product_sort_info font-xs mb-30">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam rem officia, corrupti reiciendis minima nisi modi, quasi, odio minus dolore impedit fuga eum eligendi? Officia doloremque facere quia. Voluptatum, accusantium!</p>
+                                        </div>
+                                        <div class="product_sort_info font-xs mb-30">
                                             <ul>
                                                 <li class="mb-10"><i class="fi-rs-crown mr-5"></i> 1 Year AL Jazeera Brand Warranty</li>
                                                 <li class="mb-10"><i class="fi-rs-refresh mr-5"></i> 30 Day Return Policy</li>
                                                 <li><i class="fi-rs-credit-card mr-5"></i> Cash on Delivery available</li>
                                             </ul>
-                                        </div> -->
+                                        </div>
                                         <div class="attr-detail attr-color mb-15">
                                             <strong class="mr-10">Color</strong>
                                             <ul class="list-filter color-filter">
@@ -163,10 +156,7 @@
                                 <div class="tab-content shop_info_tab entry-main-content">
                                     <div class="tab-pane fade show active" id="Description">
                                         <div class="">
-                                        @if ($product)
-                                            {{$product->description}}
-                                            @endif
-                                            <!-- <p>Uninhibited carnally hired played in whimpered dear gorilla koala depending and much yikes off far quetzal goodness and from for grimaced goodness unaccountably and meadowlark near unblushingly crucial scallop
+                                            <p>Uninhibited carnally hired played in whimpered dear gorilla koala depending and much yikes off far quetzal goodness and from for grimaced goodness unaccountably and meadowlark near unblushingly crucial scallop
                                                 tightly neurotic hungrily some and dear furiously this apart.</p>
                                             <p>Spluttered narrowly yikes left moth in yikes bowed this that grizzly much hello on spoon-fed that alas rethought much decently richly and wow against the frequent fluidly at formidable acceptably flapped
                                                 besides and much circa far over the bucolically hey precarious goldfinch mastodon goodness gnashed a jellyfish and one however because.
@@ -189,7 +179,7 @@
                                             <p>Scallop or far crud plain remarkably far by thus far iguana lewd precociously and and less rattlesnake contrary caustic wow this near alas and next and pled the yikes articulate about as less cackled dalmatian
                                                 in much less well jeering for the thanks blindly sentimental whimpered less across objectively fanciful grimaced wildly some wow and rose jeepers outgrew lugubrious luridly irrationally attractively
                                                 dachshund.
-                                            </p> -->
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="Additional-info">
@@ -292,7 +282,7 @@
                                                         <div class="single-comment justify-content-between d-flex">
                                                             <div class="user justify-content-between d-flex">
                                                                 <div class="thumb text-center">
-                                                                    <img src="{{asset('assets/imgs/page/avatar-6.jpg')}}" alt="">
+                                                                    <img src="assets/imgs/page/avatar-6.jpg" alt="">
                                                                     <h6><a href="#">Jacky Chan</a></h6>
                                                                     <p class="font-xxs">Since 2012</p>
                                                                 </div>
@@ -315,7 +305,7 @@
                                                         <div class="single-comment justify-content-between d-flex">
                                                             <div class="user justify-content-between d-flex">
                                                                 <div class="thumb text-center">
-                                                                    <img src="{{asset('assets/imgs/page/avatar-7.jpg')}}" alt="">
+                                                                    <img src="assets/imgs/page/avatar-7.jpg" alt="">
                                                                     <h6><a href="#">Ana Rosie</a></h6>
                                                                     <p class="font-xxs">Since 2008</p>
                                                                 </div>
@@ -338,7 +328,7 @@
                                                         <div class="single-comment justify-content-between d-flex">
                                                             <div class="user justify-content-between d-flex">
                                                                 <div class="thumb text-center">
-                                                                    <img src="{{asset('assets/imgs/page/avatar-8.jpg')}}" alt="">
+                                                                    <img src="assets/imgs/page/avatar-8.jpg" alt="">
                                                                     <h6><a href="#">Steven Keny</a></h6>
                                                                     <p class="font-xxs">Since 2010</p>
                                                                 </div>
@@ -445,8 +435,8 @@
                                                 <div class="product-img-action-wrap">
                                                     <div class="product-img product-img-zoom">
                                                         <a href="product-details.html" tabindex="0">
-                                                            <img class="default-img" src="{{asset('assets/imgs/shop/product-2-1.jpg')}}" alt="">
-                                                            <img class="hover-img" src="{{asset('assets/imgs/shop/product-2-2.jpg')}}" alt="">
+                                                            <img class="default-img" src="assets/imgs/shop/product-2-1.jpg" alt="">
+                                                            <img class="hover-img" src="assets/imgs/shop/product-2-2.jpg" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="product-action-1">
@@ -476,8 +466,8 @@
                                                 <div class="product-img-action-wrap">
                                                     <div class="product-img product-img-zoom">
                                                         <a href="product-details.html" tabindex="0">
-                                                            <img class="default-img" src="{{asset('assets/imgs/shop/product-3-1.jpg')}}" alt="">
-                                                            <img class="hover-img" src="{{asset('assets/imgs/shop/product-4-2.jpg')}}" alt="">
+                                                            <img class="default-img" src="assets/imgs/shop/product-3-1.jpg" alt="">
+                                                            <img class="hover-img" src="assets/imgs/shop/product-4-2.jpg" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="product-action-1">
@@ -507,8 +497,8 @@
                                                 <div class="product-img-action-wrap">
                                                     <div class="product-img product-img-zoom">
                                                         <a href="product-details.html" tabindex="0">
-                                                            <img class="default-img" src="{{asset('assets/imgs/shop/product-4-1.jpg')}}" alt="">
-                                                            <img class="hover-img" src="{{asset('assets/imgs/shop/product-4-2.jpg')}}" alt="">
+                                                            <img class="default-img" src="assets/imgs/shop/product-4-1.jpg" alt="">
+                                                            <img class="hover-img" src="assets/imgs/shop/product-4-2.jpg" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="product-action-1">
@@ -538,8 +528,8 @@
                                                 <div class="product-img-action-wrap">
                                                     <div class="product-img product-img-zoom">
                                                         <a href="product-details.html" tabindex="0">
-                                                            <img class="default-img" src="{{asset('assets/imgs/shop/product-5-1.jpg')}}" alt="">
-                                                            <img class="hover-img" src="{{asset('assets/imgs/shop/product-3-2.jpg')}}" alt="">
+                                                            <img class="default-img" src="assets/imgs/shop/product-5-1.jpg" alt="">
+                                                            <img class="hover-img" src="assets/imgs/shop/product-3-2.jpg" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="product-action-1">
@@ -634,7 +624,7 @@
                             </div>
                             <div class="single-post clearfix">
                                 <div class="image">
-                                    <img src="{{asset('assets/imgs/shop/thumbnail-3.jpg')}}" alt="#">
+                                    <img src="assets/imgs/shop/thumbnail-3.jpg" alt="#">
                                 </div>
                                 <div class="content pt-10">
                                     <h5><a href="product-details.html">Chen Cardigan</a></h5>
@@ -646,7 +636,7 @@
                             </div>
                             <div class="single-post clearfix">
                                 <div class="image">
-                                    <img src="{{asset('assets/imgs/shop/thumbnail-4.jpg')}}" alt="#">
+                                    <img src="assets/imgs/shop/thumbnail-4.jpg" alt="#">
                                 </div>
                                 <div class="content pt-10">
                                     <h6><a href="product-details.html">Chen Sweater</a></h6>
@@ -658,7 +648,7 @@
                             </div>
                             <div class="single-post clearfix">
                                 <div class="image">
-                                    <img src="{{asset('assets/imgs/shop/thumbnail-5.jpg')}}" alt="#">
+                                    <img src="assets/imgs/shop/thumbnail-5.jpg" alt="#">
                                 </div>
                                 <div class="content pt-10">
                                     <h6><a href="product-details.html">Colorful Jacket</a></h6>
