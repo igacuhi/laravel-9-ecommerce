@@ -63,9 +63,7 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                            @if(isset($product))
-                                            <a href="{{route('products.details',['slug'=>$product->slug])}}">
-                                            @endif  
+                                            <a href="{{route('products.details',['slug'=>$product->slug])}}">  
                                             <img class="default-img" src="{{ asset('assets/imgs/shop/product-' . $product->id . '-1.jpg') }}" alt="{{ $product->name }}">
                                             <img class="hover-img" src="{{ asset('assets/imgs/shop/product-' . $product->id . '-2.jpg') }}" alt="{{ $product->name }}">
         
@@ -85,11 +83,8 @@
                                         <div class="product-category">
                                             <a href="shop.html">Music</a>
                                         </div>
-                                        @if ($product)
                                             <h2><a href="{{route('products.details',['slug'=>$product->slug])}}">{{$product->name}}</a></h2>
-                                        @else
-                                         <h2>product not available</h2>
-                                        @endif
+                                       
                                         <div class="rating-result" title="90%">
                                             <span>
                                                 <span>90%</span>

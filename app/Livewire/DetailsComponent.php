@@ -8,16 +8,15 @@ class DetailsComponent extends Component
 {
     public $slug;
     public $product;
-    public function mount($slug)
+    public function mount($slug)  
     {   
         $this->slug = $slug;
-        $this->product = Product::where('slug', $this->slug)->first();
 
     }
     public function render()
     {
         $product = Product::where('slug',$this->slug)->first();
-        return view('livewire.details-component', ['product' => $this->product]);
+        return view('livewire.details-component', ['product' =>$product])->layout('layouts.app');
 
     }
     
