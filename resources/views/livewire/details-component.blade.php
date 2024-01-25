@@ -441,12 +441,22 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="row related-products">
-                                        @foreach($rproducts as rproduct) 
+                                        @foreach($rproducts as rproduct->
                                         <div class="col-lg-3 col-md-4 col-12 col-sm-6">
                                             <div class="product-cart-wrap small hover-up">
                                                 <div class="product-img-action-wrap">
                                                     <div class="product-img product-img-zoom">
-                                                        <a href="{{route('product.details',['slug'=>$rproduct->slug])}}" tabindex="0">
+                                                        @foreach($rproducts as $rproduct)                       
+                                                            @if ($rproduct)
+                                                            @if ($rproduct && $rproduct->slug)
+                                                                <a href="{{ route('product.details', ['slug' => $rproduct->slug]) }}" tabindex="0">
+                                                            @endif
+                                                            @unless ($rproduct && $rproduct->slug)
+                                                                <p>No slug available for this product.</p>
+                                                            @else
+                                                                <a href="{{ route('product.details', ['slug' => $rproduct->slug]) }}" tabindex="0">
+                                                            @endunless                                                                              
+                                                        @endforeach 
                                                             <img class="default-img" src="{{asset('assets/imgs/shop/product-')}}{{$rproduct->id}}-1.jpg" alt="{{$rproduct->name}}">
                                                             <img class="hover-img" src="{{asset('assets/imgs/shop/product-2-2.jpg')}}" alt="">
                                                         </a>
@@ -542,42 +552,20 @@
                                 <h5 class="widget-title mb-10">New products</h5>
                                 <div class="bt-1 border-color-1"></div>
                             </div>
+                            @foreach($nproducts as $nproduct)
                             <div class="single-post clearfix">
                                 <div class="image">
-                                    <img src="{{asset('assets/imgs/shop/thumbnail-3.jpg"')}} alt="#">
+                                    <img src="{{asset('assets/imgs/shop/product-') }}{{$nproduct->id}}-1.jpg" alt="{{$nproduct->name}}">
                                 </div>
                                 <div class="content pt-10">
-                                    <h5><a href="product-details.html">Chen Cardigan</a></h5>
-                                    <p class="price mb-0 mt-5">$99.50</p>
+                                    <h5><a href="{{route('product.details',['slug'=>$nproduct->slug])}}">{{$nproduct->name}}</a></h5>
+                                    <p class="price mb-0 mt-5">${{$nproduct->regular_price}}</p>
                                     <div class="product-rate">
                                         <div class="product-rating" style="width:90%"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="single-post clearfix">
-                                <div class="image">
-                                    <img src="{{asset('assets/imgs/shop/thumbnail-4.jpg')}}" alt="#">
-                                </div>
-                                <div class="content pt-10">
-                                    <h6><a href="product-details.html">Chen Sweater</a></h6>
-                                    <p class="price mb-0 mt-5">$89.50</p>
-                                    <div class="product-rate">
-                                        <div class="product-rating" style="width:80%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-post clearfix">
-                                <div class="image">
-                                    <img src="{{asset('assets/imgs/shop/thumbnail-5.jpg')}}" alt="#">
-                                </div>
-                                <div class="content pt-10">
-                                    <h6><a href="product-details.html">Colorful Jacket</a></h6>
-                                    <p class="price mb-0 mt-5">$25</p>
-                                    <div class="product-rate">
-                                        <div class="product-rating" style="width:60%"></div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>                        
                     </div>
                 </div>
