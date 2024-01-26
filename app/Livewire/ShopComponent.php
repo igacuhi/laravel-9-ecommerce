@@ -6,6 +6,7 @@ use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Product;
 use Cart;
+use Illuminate\Support\Facades\Session;
 
 class ShopComponent extends Component
 {
