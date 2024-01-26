@@ -70,12 +70,14 @@
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
-                                                @if ($product)
+                                                @if($product)
                                                 <a href="{{ route('product.details', ['slug' => $product->slug]) }}">
-                                                </a>
+                                                </a> 
                                                 @endif
-                                                <img class="default-img" src="{{asset('assets/imgs/shop/product-2-1.jpg')}}" alt="">
-                                                <img class="hover-img" src="{{asset('assets/imgs/shop/product-2-2.jpg')}}" alt="">
+                                                @if($product) 
+                                                <img class="default-img" src="{{asset('assets/imgs/shop/product-')}}{{$product->id}}-1.jpg" alt="{{$product->name}}">
+                                                <img class="hover-img" src="{{asset('assets/imgs/shop/product-')}}{{$product->id}}-2.jpg" alt="{{$product->name}}">
+                                                @endif
                                             </a>
                                         </div>
                                         <div class="product-action-1">
@@ -93,7 +95,7 @@
                                             <a href="shop.html">Music</a>
                                         </div>
                                         <h2>@if ($product)
-                                                <a href="{{ route('product.details', ['slug' => $product->slug]) }}">
+                                                <a href="{{ route('product.details', ['slug' => $product->slug]) }}">{{$product->name}}
                                                 </a>
                                                 @endif  Colorful Pattern Shirts</a></h2>
                                         <div class="rating-result" title="90%">
@@ -108,7 +110,9 @@
                                             <!-- <span class="old-price">$245.8</span> -->
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="shop-cart.php"><i class="fi-rs-shopping-bag-add"></i></a>
+                                            @if ($product && $product->id)
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})"><i class="fi-rs-shopping-bag-add"></i></a>
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
@@ -150,8 +154,9 @@
                                             <span class="old-price">$255.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="shop-cart.php"><i class="fi-rs-shopping-bag-add"></i></a>
-                                        </div>
+                                        @if ($product && $product->id)
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})"><i class="fi-rs-shopping-bag-add"></i></a>
+                                            @endif                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -192,8 +197,9 @@
                                             <span class="old-price">$445.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="shop-cart.php"><i class="fi-rs-shopping-bag-add"></i></a>
-                                        </div>
+                                        @if ($product && $product->id)
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})"><i class="fi-rs-shopping-bag-add"></i></a>
+                                            @endif                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -234,8 +240,9 @@
                                             <span class="old-price">$235.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="shop-cart.php"><i class="fi-rs-shopping-bag-add"></i></a>
-                                        </div>
+                                        @if ($product && $product->id)
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})"><i class="fi-rs-shopping-bag-add"></i></a>
+                                            @endif                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -275,8 +282,9 @@
                                             <span class="old-price">$45.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="shop-cart.php"><i class="fi-rs-shopping-bag-add"></i></a>
-                                        </div>
+                                        @if ($product && $product->id)
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})"><i class="fi-rs-shopping-bag-add"></i></a>
+                                            @endif                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -317,8 +325,9 @@
                                             <span class="old-price">$245.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="shop-cart.php"><i class="fi-rs-shopping-bag-add"></i></a>
-                                        </div>
+                                        @if ($product && $product->id)
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})"><i class="fi-rs-shopping-bag-add"></i></a>
+                                            @endif                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -358,8 +367,9 @@
                                             <span>$1275.85 </span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="shop-cart.php"><i class="fi-rs-shopping-bag-add"></i></a>
-                                        </div>
+                                        @if ($product && $product->id)
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})"><i class="fi-rs-shopping-bag-add"></i></a>
+                                            @endif                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -397,8 +407,9 @@
                                             <span class="old-price">$245.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="shop-cart.php"><i class="fi-rs-shopping-bag-add"></i></a>
-                                        </div>
+                                        @if ($product && $product->id)
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})"><i class="fi-rs-shopping-bag-add"></i></a>
+                                            @endif                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -436,8 +447,9 @@
                                             <span class="old-price">$245.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="shop-cart.php"><i class="fi-rs-shopping-bag-add"></i></a>
-                                        </div>
+                                        @if ($product && $product->id)
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})"><i class="fi-rs-shopping-bag-add"></i></a>
+                                            @endif                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -478,8 +490,9 @@
                                             <span class="old-price">$245.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="shop-cart.php"><i class="fi-rs-shopping-bag-add"></i></a>
-                                        </div>
+                                        @if ($product && $product->id)
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})"><i class="fi-rs-shopping-bag-add"></i></a>
+                                            @endif                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -523,8 +536,9 @@
                                             <span class="old-price">$255.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="shop-cart.php"><i class="fi-rs-shopping-bag-add"></i></a>
-                                        </div>
+                                        @if ($product && $product->id)
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})"><i class="fi-rs-shopping-bag-add"></i></a>
+                                            @endif                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -568,8 +582,9 @@
                                             <span class="old-price">$445.8</span>
                                         </div>
                                         <div class="product-action-1 show">
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="shop-cart.php"><i class="fi-rs-shopping-bag-add"></i></a>
-                                        </div>
+                                        @if ($product && $product->id)
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})"><i class="fi-rs-shopping-bag-add"></i></a>
+                                            @endif                                        </div>
                                     </div>
                                 </div>
                             </div>
