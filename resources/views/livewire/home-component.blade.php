@@ -410,7 +410,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!--End product-grid-4-->
+                        <!-- End product-grid-4 -->
                     </div>
                     <!--En tab one (Featured)-->
                     <div class="tab-pane fade" id="tab-two" role="tabpanel" aria-labelledby="tab-two">
