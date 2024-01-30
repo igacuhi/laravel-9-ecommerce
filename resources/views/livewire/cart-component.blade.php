@@ -26,7 +26,9 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @if(session::has('success_message'))
+                                @if(\Illuminate\Support\Facades\Session::has('success_message'))
+    
+
                                     <div class="alert alert-success">
                                         <strong>Success  {{session::get('success_message')}} </strong>
                                     @endif
