@@ -27,21 +27,19 @@
                                 </thead>
                                 <tbody>
                                 @if(\Illuminate\Support\Facades\Session::has('success_message'))
-    
-
                                     <div class="alert alert-success">
-                                        <strong>Success  {{session::get('success_message')}} </strong>
+                                        <strong>Success {{session::get('success_message')}} </strong>
                                     @endif
                                     @if(Cart::count() > 0)
                                     @foreach(Cart::content() as $item)
                                     <tr>
                                         <td class="image product-thumbnail"><img src="{{asset('assets/imgs/shop/product-')}}{{$item->model->id}}-1.jpg" alt="#"></td>
                                         <td class="product-des product-name">
-                                            <h5 class="product-name"><a href="product-details.html">{{$Item->name}}</a></h5>
+                                            <h5 class="product-name"><a href="product-details.html">{{$Item->model->name}}</a></h5>
                                             <!-- <p class="font-xs">Maboriosam in a tonto nesciung eget<br> distingy magndapibus.
                                             </p> -->
                                         </td>
-                                        <td class="price" data-title="Price"><span>${{$item->model->regular_price}} </span></td>
+                                        <td class="price" data-title="Price"><span>${{$item->model->regular_price}}</span></td>
                                         <td class="text-center" data-title="Stock">
                                             <div class="detail-qty border radius  m-auto">
                                                 <a href="#" class="qty-down"><i class="fi-rs-angle-small-down"></i></a>
