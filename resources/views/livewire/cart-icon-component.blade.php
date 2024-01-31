@@ -10,35 +10,31 @@
                                             @foreach(Cart::content() as $item)
                                             <li>
                                                 <div class="shopping-cart-img">
-                                                    <a href="product-details.html"><img alt="Surfside Media" src="assets/imgs/shop/thumbnail-3.jpg"></a>
+                                                @if($product)
+                                                <a href="{{ route('product.details', ['slug' => $item->model->slug]) }}">
+                                                </a> 
+                                                @endif
+                                                        <img alt="{{$item->model->name}}" src="{{asset('assets/imgs/shop/product-')}}{{$item->model->id}}-1.jpg"></a>
                                                 </div>
                                                 <div class="shopping-cart-title">
-                                                    <h4><a href="product-details.html">Daisy Casual Bag</a></h4>
-                                                    <h4><span>1 × </span>$800.00</h4>
+                                                @if($product)
+                                                    <h4><a href="{{ route('product.details', ['slug' => $item->model->slug]) }}">{{substr($item->model->name,0,20)}}...</a> 
+                                                    @endif</h4>
+                                                    <h4><span>{{$item->qty}} × </span>${{$item->model->regular_price}}</h4>
                                                 </div>
-                                                <div class="shopping-cart-delete">
+                                                <!-- <div class="shopping-cart-delete">
                                                     <a href="#"><i class="fi-rs-cross-small"></i></a>
-                                                </div>
+                                                </div> -->
                                             </li>
-                                            <li>
-                                                <div class="shopping-cart-img">
-                                                    <a href="product-details.html"><img alt="Surfside Media" src="assets/imgs/shop/thumbnail-2.jpg"></a>
-                                                </div>
-                                                <div class="shopping-cart-title">
-                                                    <h4><a href="product-details.html">Corduroy Shirts</a></h4>
-                                                    <h4><span>1 × </span>$3200.00</h4>
-                                                </div>
-                                                <div class="shopping-cart-delete">
-                                                    <a href="#"><i class="fi-rs-cross-small"></i></a>
-                                                </div>
-                                            </li>
+                                            @endforeach
+                                    
                                         </ul>
                                         <div class="shopping-cart-footer">
                                             <div class="shopping-cart-total">
-                                                <h4>Total <span>$4000.00</span></h4>
+                                                <h4>Total <span>${{Cart::total()}}</span></h4>
                                             </div>
                                             <div class="shopping-cart-button">
-                                                <a href="cart.html" class="outline">View cart</a>
+                                                <a href="{{route('shop-cart')}}" class="outline">View cart</a>
                                                 <a href="checkout.html">Checkout</a>
                                             </div>
                                         </div>
