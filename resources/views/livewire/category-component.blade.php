@@ -21,11 +21,11 @@
                 <div class="row">
                     <div class="col-lg-9">
                         <div class="shop-product-fillter">
-                            <div class="total-product">
+                            <div class="totall-product">
                                 @if ($product)
-                                    We found <strong class="text-brand">{{$product->total()}}</strong> items for you!
+                                We found <strong class="text-brand">{{$product->total()}}</strong> items for you!<b> {{$category_name}}</b>
                                 @else
-                                    No products found.
+                                No products found.
                                 @endif
                             </div>
                             <div class="sort-by-product-area">
@@ -68,7 +68,6 @@
                             </div>
                         </div>
                         <div class="row product-grid-3">
-                           
                             <div class="col-lg-4 col-md-4 col-6 col-sm-6">
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
@@ -564,8 +563,8 @@
                             <h5 class="section-title style-1 mb-30 wow fadeIn animated">Category</h5>
                             <ul class="categories">
                                 @foreach($categories as $category)
-                                        <li><a href="{{route('product.category',['slug'=>$category->slug])}}">{{$category->name}}</a></li>
-                                @endforeach
+                                <li><a href="{{route('product.category',['slug'=>$category=>slug])}}">{{$category->name}}</a></li>
+                                 @endforeach
                         </div>
                         <!-- Fillter By Price -->
                         <div class="sidebar-widget price_range range mb-30">
@@ -677,3 +676,4 @@
         </section>
     </main> 
 </div>
+  

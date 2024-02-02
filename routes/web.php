@@ -8,6 +8,8 @@ use App\Livewire\CheckoutComponent;
 use App\Livewire\ShopComponent;
 use App\Livewire\HomeComponent;
 use App\Livewire\Admin\AdminDashboard;
+use App\Livewire\CategoryComponent;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -26,11 +28,12 @@ use App\Livewire\Admin\AdminDashboard;
  Route::get('/cart',CartComponent::class)->name('shop-cart');
  Route::get('/checkout',CheckoutComponent::class)->name('shop-checkout');
  Route::get('/product/{slug}',DetailsComponent::class)->name('product.details');
- Route::get('/shop/{product}', function ($product) {
-    return view('livewire.shop-component', [
-        'product' => $product
-    ]);
-});
+  Route::get('/shop/{product}', function ($product) {
+     return view('livewire.shop-component', [
+         'product' => $product
+     ]);
+ });
+Route::get('/product-category/{slug}',CategoryComponent::class)->name('product.category');
 
  Auth::routes();
 
