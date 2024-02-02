@@ -9,6 +9,7 @@ use App\Livewire\ShopComponent;
 use App\Livewire\HomeComponent;
 use App\Livewire\Admin\AdminDashboard;
 use App\Livewire\CategoryComponent;
+use App\Livewire\SearchComponent;
 
 
 /*
@@ -34,6 +35,7 @@ use App\Livewire\CategoryComponent;
      ]);
  });
 Route::get('/product-category/{slug}',CategoryComponent::class)->name('product.category');
+Route::get('/search',SearchComponent::class)->name('product.search');
 
  Auth::routes();
 
