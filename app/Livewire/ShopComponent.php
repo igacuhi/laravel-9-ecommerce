@@ -11,14 +11,17 @@ use App\Models\Category;
 class ShopComponent extends Component
 {
     public $product;  // Define the property
+    use WithPagination;
+    public $pagesize = 12;
+    public $orderBy="Default sorting";
+    public $min_value = 0;
+    public $max_value = 1000;
+
     public function mount($product = null)
     {   
         $this->product = $product;
     }
-    use WithPagination;
-    public $pagesize = 12;
-    public $orderBy="Default sorting";
-
+    
     public function store($product_id,$product_name,$product_price){
         Cart::add($product_id,$product_name,1,$product_price)->associate('\App\Models\Product');
         session()->flash('success_message','Item added in cart');
@@ -39,19 +42,19 @@ class ShopComponent extends Component
     {
         if($this->orderBy == 'Price: Low to High')
         {
-            $products = Product::orderBy('regular_price','ASC')-> paginate($this->pagesize);
+            $products = Product::whereBetween('regular_price',[$this->min_value,$this->max_value])->orderBy('regular_price','ASC')-> paginate($this->pagesize);
         }
         elseif($this->orderBy == 'Price: High to Low')
         {
-            $products = Product::orderBy('regular_price','DESC')-> paginate($this->pagesize);
+            $products = Product::whereBetween('regular_price',[$this->min_value,$this->max_value])->orderBy('regular_price','DESC')-> paginate($this->pagesize);
 
         }
         elseif ($this->orderBy == 'Sort by Newness') {
-            $products = Product::orderBy('created_at','DESC')-> paginate($this->pagesize);
+            $products = Product::whereBetween('regular_price',[$this->min_value,$this->max_value])->orderBy('created_at','DESC')-> paginate($this->pagesize);
 
         }
         else{
-            $products = Product::paginate($this->pagesize);
+            $products = Product::whereBetween('regular_price',[$this->min_value,$this->max_value])->paginate($this->pagesize);
 
         }
         $categories = Category::orderBy('name','ASC')->get();

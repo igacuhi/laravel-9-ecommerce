@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Surfside Media</title>
+    <title>Baseline Fashions</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,7 +42,7 @@
                                 <ul>
                                     <li>Get great devices up to 50% off <a href="shop.html">View details</a></li>
                                     <li>Supper Value Deals - Save more with coupons</li>
-                                    <li>Trendy 25silver jewelry, save up 35% off today <a href="shop.html">Shop now</a></li>
+                                    <li>Trendy 25silver jewelry, save up 35% off today <a href="{{route('shop')}}">Shop now</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                             <div class="categori-dropdown-wrap categori-dropdown-active-large">
                                 <ul>
                                     <li class="has-children">
-                                        <a href="shop.html"><i class="surfsidemedia-font-dress"></i>Women's Clothing</a>
+                                        <a href="{{route('shop')}}"><i class="surfsidemedia-font-dress"></i>Women's Clothing</a>
                                         <div class="dropdown-menu">
                                             <ul class="mega-menu d-lg-flex">
                                                 <li class="mega-menu-col col-lg-7">
@@ -329,7 +329,7 @@
                                                             <span class="new-price text-success">Save to 50%</span>
                                                         </div>
                                                         <div class="menu-banner-btn">
-                                                            <a href="product-details.html">Shop now</a>
+                                                            <a href="{{route('shop')}}">Shop now</a>
                                                         </div>
                                                     </div>
                                                     <div class="menu-banner-discount">
@@ -681,6 +681,7 @@
     <script src="{{asset ('assets/js/main.js?v=3.3')}}"></script>
     <script src="{{asset ('assets/js/shop.js?v=3.3')}}"></script>
     @livewireScripts
+    @stack('scripts')
 </body>
 
 </html>
