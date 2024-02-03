@@ -6,6 +6,13 @@
         nav .hidden{
             display: block;
         }
+        .wishlisted{
+            background-color:#f15412 |important;
+            border: 1px solid transparent|important;
+        }
+        .wishlisted{
+            color:#fff |important;
+        }
      </style>
 <main class="main">
         <div class="page-header breadcrumb-wrap">
@@ -68,7 +75,9 @@
                             </div>
                         </div>
                         <div class="row product-grid-3">
-                           
+                         @php
+                            $witems = Cart::instance('wishlist')->content()->pluck('id');
+                         @endphp
                             <div class="col-lg-4 col-md-4 col-6 col-sm-6">
                                 <div class="product-cart-wrap mb-30">
                                     <div class="product-img-action-wrap">
@@ -102,13 +111,18 @@
                                             </span>
                                         </div>
                                         <div class="product-price">
-                                            <span>$138.85 </span>
-                                            <span class="old-price">$255.8</span>
+                                            <span>${{$product->regular_price}}</span>
+                                            <!-- <span class="old-price">$255.8</span> -->
                                         </div>
                                         <div class="product-action-1 show">
                                         @if ($product && $product->id)
+                                            @if($witems->contains($product->id))
+                                                <a aria-label="Add To Wishlist" class="action-btn hover-up wishlisted" href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                            @else
+                                                <a aria-label="Add To Wishlist" class="action-btn hover-up" href="wishlist.php"><i class="fi-rs-heart"></i></a>
+                                            @endif
                                             <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})"><i class="fi-rs-shopping-bag-add"></i></a>
-                                            @endif                                        </div>
+                                         @endif                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +141,6 @@
                                         <div class="product-action-1">
                                             <a aria-label="Quick view" class="action-btn hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal">
                                                 <i class="fi-rs-search"></i></a>
-                                            <a aria-label="Add To Wishlist" class="action-btn hover-up" href="wishlist.php"><i class="fi-rs-heart"></i></a>
                                             <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i class="fi-rs-shuffle"></i></a>
                                         </div>
                                         <div class="product-badges product-badges-position product-badges-mrg">
