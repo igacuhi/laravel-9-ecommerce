@@ -10,6 +10,7 @@ use App\Livewire\HomeComponent;
 use App\Livewire\Admin\AdminDashboard;
 use App\Livewire\CategoryComponent;
 use App\Livewire\SearchComponent;
+use App\Livewire\WishlistIconComponent;
 
 
 /*
@@ -36,6 +37,8 @@ use App\Livewire\SearchComponent;
  });
 Route::get('/product-category/{slug}',CategoryComponent::class)->name('product.category');
 Route::get('/search',SearchComponent::class)->name('product.search');
+Route::get('/wishlist',[ 'wishlist-icon-component','index'])->name(''); // Note lowercase and hyphen-separated name
+
 
  Auth::routes();
 

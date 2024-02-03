@@ -111,7 +111,12 @@
                                             </span>
                                         </div>
                                         <div class="product-price">
+                                            @if ($product)
                                             <span>${{$product->regular_price}}</span>
+                                            @else
+                                            <span>Product not available</span>
+                                            @endif
+
                                             <!-- <span class="old-price">$255.8</span> -->
                                         </div>
                                         <div class="product-action-1 show">
