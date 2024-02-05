@@ -22,7 +22,6 @@ class CategoryComponent extends Component
         session()->flash('success_message','Item added in cart');
         return redirect()->route('shop-cart');
     }
-
     public function changePageSize($size)
     {
         $this->pagesize = $size;
@@ -38,7 +37,6 @@ class CategoryComponent extends Component
             $this->slug = $slug;
             $this->product = $product;
         }
-
     public function render()
     {
         $category = Category::where('slug',$this->slug)->first();
