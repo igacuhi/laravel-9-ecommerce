@@ -1,4 +1,14 @@
+
 <div>
+    <style>
+        nav svg{
+            height:20px;
+        }
+        nav .hidden{
+            display: block;
+        }
+
+     </style>
     <main class="main">
         <div class="page-header breadcrumb-wrap">
             <div class="container">
@@ -33,11 +43,12 @@
                                             <td>{{$category->id}}</td>
                                             <td>{{$category->name}}</td>
                                             <td>{{$category->slug}}</td>
-
+                                            <td></td>
                                         </tr>
                                         @endforeach
                                     </tbody>
                                 </table>
+                                {{$categories->links()}}
                             </div>
                         </div>
                     </div>

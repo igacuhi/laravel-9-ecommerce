@@ -11,6 +11,7 @@ use App\Livewire\Admin\AdminDashboard;
 use App\Livewire\CategoryComponent;
 use App\Livewire\SearchComponent;
 use App\Livewire\WishlistComponent;
+use App\Livewire\Admin\AdminCategoriesComponent;
 
 
 /*
