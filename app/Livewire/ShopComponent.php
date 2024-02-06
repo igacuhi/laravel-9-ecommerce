@@ -48,9 +48,12 @@ class ShopComponent extends Component
     {
         foreach(Cart::instance('wishlist')->content() as $witem)
         {
-            Cart::instance('wishlist')->remove($witem->rowId);
-            $this->emitTo('wishlist-icon-component','refreshComponent');
-            return;
+            if($witem->id==$product_id)
+            {
+                Cart::instance('wishlist')->remove($witem->rowId);
+                $this->emitTo('wishlist-icon-component','refreshComponent');
+                return;
+            }
         }
     }
 
@@ -81,5 +84,5 @@ class ShopComponent extends Component
         ])->layout('layouts.app');
         
     }
-    
+
 }
