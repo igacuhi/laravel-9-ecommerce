@@ -81,4 +81,5 @@ class ShopComponent extends Component
         ])->layout('layouts.app');
         
     }
+    
 }
