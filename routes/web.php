@@ -37,7 +37,6 @@ use App\Livewire\WishlistIconComponent;
  });
 Route::get('/product-category/{slug}',CategoryComponent::class)->name('product.category');
 Route::get('/search',SearchComponent::class)->name('product.search');
-Route::get('/wishlist',[ 'wishlist-icon-component','index'])->name(''); // Note lowercase and hyphen-separated name
 
 
  Auth::routes();
