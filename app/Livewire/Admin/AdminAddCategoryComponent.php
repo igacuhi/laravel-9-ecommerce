@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Admin;
 
+use App\Models\Category;
 use Livewire\Component;
 use Illuminate\support\Str;
 

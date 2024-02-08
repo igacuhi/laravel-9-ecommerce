@@ -1,5 +1,7 @@
 <?php
 
+use App\Livewire\Admin\AdminAddCategoryComponent;
+use App\Livewire\Admin\AdminEditCategoryComponent;
 use App\Livewire\DetailsComponent;
 use App\Livewire\User\UserDashboard;
 use Illuminate\Support\Facades\Route;
@@ -12,8 +14,8 @@ use App\Livewire\CategoryComponent;
 use App\Livewire\SearchComponent;
 use App\Livewire\WishlistComponent;
 use App\Livewire\Admin\AdminCategoriesComponent;
-use App\Livewire\Admin\AdminAddCategoryComponent;
 
+    
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -55,6 +57,7 @@ Route::middleware(['auth','authadmin'])->group(function(){
     Route::get('/admin/dashboard',AdminDashboard::class)->name('admin.dashboard');
     Route::get('/admin/categories',AdminCategoriesComponent::class)->name('admin.categories');
     Route::get('/admin/category/add', AdminAddCategoryComponent::class)->name('admin.category.add');
+    Route::get('/admin/category/edit/{category_id}',AdminEditCategoryComponent::class)->name('admin.category.edit');
 });
 
 Route::view('profile', 'profile')
