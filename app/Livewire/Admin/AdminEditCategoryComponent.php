@@ -5,6 +5,8 @@ namespace App\Livewire\Admin;
 use Illuminate\support\Str;
 use App\Models\Category;
 use Livewire\Component;
+use Illuminate\Support\Facades\Session;
+
 
 class AdminEditCategoryComponent extends Component
 {
@@ -24,7 +26,7 @@ class AdminEditCategoryComponent extends Component
         $this->slug = Str::slug($this->name);
     }
 
-    public function updated(){
+    public function updated($fields){
         $this->validateOnly($fields,[
             'name'=>'required',
             'slug'=>'required'
@@ -41,7 +43,7 @@ class AdminEditCategoryComponent extends Component
         $category->name = $this->name; 
         $category->slug = $this->slug; 
         $category->save();
-        session()->flash('message','category has been updated successfully!');
+        Session()->flash('message','category has been updated successfully!');
 
     }
         public function render()

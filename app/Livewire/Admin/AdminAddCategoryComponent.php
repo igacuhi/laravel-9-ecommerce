@@ -5,8 +5,10 @@ namespace App\Livewire\Admin;
 use App\Models\Category;
 use Livewire\Component;
 use Illuminate\support\Str;
+use Illuminate\Support\Facades\Session;
 
-class AdminCategoryComponent extends Component
+
+class AdminAddCategoryComponent extends Component
 {
     public $name;
     public $slug;
@@ -16,10 +18,10 @@ class AdminCategoryComponent extends Component
         $this->slug = Str::slug($this->name);
     }
 
-    public function updated(){
-        $this->validateOnly($fields,[
-            'name'=>'required',
-            'slug'=>'required'
+    public function updated($fields){
+        $this->validateOnly($fields, [
+            'name' => 'required',
+            'slug' => 'required'
         ]);
     }
 
@@ -32,11 +34,11 @@ class AdminCategoryComponent extends Component
         $category->name = $this->name;
         $category->slug = $this->slug;
         $category->save();
-        session()->flash('message','category has been created successfully!');
+        Session()->flash('message','category has been created successfully!');
     }
 
     public function render()
     {
-        return view('livewire.admin.admin-category-component');
+        return view('livewire.admin.admin-add-category-component');
     }
 }

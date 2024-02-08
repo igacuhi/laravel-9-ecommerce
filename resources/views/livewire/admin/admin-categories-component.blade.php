@@ -54,7 +54,13 @@
                                             <td>{{$category->name}}</td>
                                             <td>{{$category->slug}}</td>
                                             <td>
-                                                <a href="{{route('admin.category.edit',['category_id'->$category_id])}}" class="text-info">Edit</a>
+                                                @foreach($categories as $category)
+                                                <tr>
+                                                    <td>
+                                                        <a href="{{ route('admin.category.edit', $category->id) }}" class="text-info">Edit</a>
+                                                    </td>
+                                                </tr>
+                                                @endforeach
                                             </td>
                                         </tr>
                                         @endforeach
