@@ -54,8 +54,7 @@ Route::middleware(['auth'])->group(function(){
 Route::middleware(['auth','authadmin'])->group(function(){
     Route::get('/admin/dashboard',AdminDashboard::class)->name('admin.dashboard');
     Route::get('/admin/categories',AdminCategoriesComponent::class)->name('admin.categories');
-    Route::get('/admin/category/add', App\Livewire\Admin\AdminAddCategoryComponent::class)->name('admin.category.add');
-
+    Route::get('/admin/category/add', AdminAddCategoryComponent::class)->name('admin.category.add');
 });
 
 Route::view('profile', 'profile')
