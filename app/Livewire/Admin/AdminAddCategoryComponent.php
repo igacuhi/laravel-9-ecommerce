@@ -7,7 +7,6 @@ use Livewire\Component;
 use Illuminate\support\Str;
 use Illuminate\Support\Facades\Session;
 
-
 class AdminAddCategoryComponent extends Component
 {
     public $name;
