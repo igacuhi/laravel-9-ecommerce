@@ -17,7 +17,6 @@ class AdminAddCategoryComponent extends Component
     {
         $this->slug = Str::slug($this->name);
     }
-
     public function updated($fields){
         $this->validateOnly($fields, [
             'name' => 'required',
