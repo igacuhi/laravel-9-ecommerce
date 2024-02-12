@@ -6,7 +6,6 @@
         nav .hidden{
             display: block;
         }
-
      </style>
     <main class="main">
         <div class="page-header breadcrumb-wrap">
