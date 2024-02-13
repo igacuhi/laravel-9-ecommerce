@@ -76,9 +76,9 @@
                 <div class="modal-body pb-30 pt-30">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <h4 class="pb-3">Do you want to delete this record?</h4>
-                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#deleteConfirmation">Cancel</button>
-                            <button type="button" class="btn btn-danger" onclick="deleteCategory()">Delete</button>
+                            <h4 class="pb-3">Do you want to delete this record?</h4>                            
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#deleteConfirmation">Cancel</button>
+                                    <button type="button" class="btn btn-danger" onclick="deleteCategory()">Delete</button>
                          </div>                       
                     </div>
                 </div>
@@ -91,11 +91,12 @@
     <script>
         function deleteConfirmation(id){
             @this.set('category_id',id);
-            $('#deleteConfirmation').model('show');
+            $('#deleteConfirmation').modal('show');
         }
         function deleteCategory(){
-            @this.call('deleteCategory');
-            $('#deleteConfirmation').model('hide');
+            Livewire.emit('deleteCategory');
+            $('#deleteConfirmation').modal('hide');
        }
+         
     </script>
 @endpush

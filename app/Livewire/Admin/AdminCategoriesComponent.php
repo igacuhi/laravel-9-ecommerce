@@ -13,12 +13,13 @@ class AdminCategoriesComponent extends Component
     use WithPagination;
 
     public function deleteCategory(){
-        $category = category::find($this->category_id);
+        $category = Category::find($this->category_id);
         if ($category) {
         $category->delete();
-        session()->flash('message','category deleted successfully!');
-    } else {
-        session()->flash('message', 'Category not found!');
+        Session()->flash('message','category deleted successfully!');
+    }  
+    else {
+        Session()->flash('message', 'Category not found!');
     }
     }
     public function render()
