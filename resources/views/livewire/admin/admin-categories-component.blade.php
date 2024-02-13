@@ -70,7 +70,8 @@
             </div>
         </section>
     </main>
-    <div class="modal" id="deleteConfirmation">
+
+     <div class="modal" id="deleteConfirmation">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body pb-30 pt-30">
@@ -94,7 +95,7 @@
             $('#deleteConfirmation').modal('show');
         }
         function deleteCategory(){
-            Livewire.emit('deleteCategory');
+            @this.call('deleteCategory');
             $('#deleteConfirmation').modal('hide');
        }
          
