@@ -13,7 +13,7 @@
                 <div class="breadcrumb">
                     <a href="/" rel="nofollow">Home</a>
 
-                    <span></span> All Categories
+                    <span></span> All Products
                 </div>
             </div>
         </div>
@@ -25,10 +25,10 @@
                             <div class="card-header">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        All Categories
+                                        All products
                                     </div>
                                     <div class="col-md-6">
-                                        <a href="{{route('admin.category.add')}}" class="btn btn-succes float-end">Add New Category</a>
+ 
                                     </div>
                                 </div>
                             </div>
@@ -40,29 +40,35 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
+                                            <th>Image</th>
                                             <th>Name</th>
-                                            <th>Slug</th>
+                                            <th>Price</th>
+                                            <th>Category</th>
+                                            <th>Date</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @php
-                                            $i = ($categories->currentPage()-1)*$categories->perPage();
+                                            $i = ($products->currentPage()-1)*$products->perPage();
                                         @endphp
-                                        @foreach($categories as $category)
+                                        @foreach($products as $product)
                                         <tr>
                                             <td>{{++$i}}</td>
-                                            <td>{{$category->name}}</td>
-                                            <td>{{$category->slug}}</td>
+                                            <td><img src="{{asset('assets/imgs/shop/product-')}}{{$product->id}}-1.jpg" alt="{{$product->name}}" width="60" /> </td>
+                                            <td>{{$product->stock_status}}</td>
+                                            <td>{{$product->regular_price}}</td>
+                                            <td>{{$product->category->name}}</td>
+                                            <td>{{$product->created_at}}</td>
+
                                             <td>           
-                                                        <a href="{{ route('admin.category.edit', $category->id) }}" class="text-info">Edit</a>
-                                                        <a href="#" class="text-danger" onclick="deleteConfirmation({{$category->id}})" style="margin-left:20px;">Delete</a>
+                                                        
                                             </td>
                                         </tr>
                                         @endforeach
                                     </tbody>
                                 </table>
-                                {{$categories->links()}}
+                                {{$products->links()}}
                             </div>
                         </div>
                     </div>
@@ -71,33 +77,3 @@
         </section>
     </main>
 </div>
-     <div class="modal" id="deleteConfirmation">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body pb-30 pt-30">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h4 class="pb-3">Do you want to delete this record?</h4>                            
-                                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#deleteConfirmation">Cancel</button>
-                                    <button type="button" class="btn btn-danger" onclick="deleteCategory()">Delete</button>
-                         </div>                       
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-@push('scripts')
-    <script>
-        function deleteConfirmation(id){
-            @this.set('category_id',id);
-            $('#deleteConfirmation').modal('show');
-        }
-        function deleteCategory(){
-            @this.call('deleteCategory');
-            $('#deleteConfirmation').modal('hide');
-       }
-         
-    </script>
-@endpush
