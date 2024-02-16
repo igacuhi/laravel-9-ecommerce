@@ -70,7 +70,6 @@
             </div>
         </section>
     </main>
-</div>
      <div class="modal" id="deleteConfirmation">
         <div class="modal-dialog">
             <div class="modal-content">
