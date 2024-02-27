@@ -42,6 +42,7 @@
                                             <th>#</th>
                                             <th>Image</th>
                                             <th>Name</th>
+                                            <th>stock</th>
                                             <th>Price</th>
                                             <th>Category</th>
                                             <th>Date</th>
@@ -55,6 +56,7 @@
                                         @foreach($products as $product)
                                         <tr>
                                             <td>{{++$i}}</td>
+                                            <td>{{$product->name}}</td>
                                             <td><img src="{{asset('assets/imgs/shop/product-')}}{{$product->id}}-1.jpg" alt="{{$product->name}}" width="60" /> </td>
                                             <td>{{$product->stock_status}}</td>
                                             <td>{{$product->regular_price}}</td>

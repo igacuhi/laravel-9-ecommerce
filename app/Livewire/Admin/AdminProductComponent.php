@@ -12,6 +12,6 @@ class AdminProductComponent extends Component
     public function render()
     {
         $products = Product::orderBy('created_at','DESC')->paginate(10);
-        return view('livewire.admin.admin-product-component');
+        return view('livewire.admin.admin-product-component',['products'=>$products]);
     }
 }
