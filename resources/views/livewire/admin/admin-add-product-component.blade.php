@@ -44,6 +44,7 @@
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
+
                                         <div class="mb-3 mt-3">
                                             <label form="slug" class="form-label">Slug</label>
                                             <input type="text" name="slug" class="form-control" placeholder="Enter category slug" wire:model="slug" />
@@ -51,6 +52,7 @@
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
+
                                         <div class="mb-3 mt-3">
                                             <label form="short_description" class="form-label">Short description</label>
                                             <textarea class="form-control" name="short_description" placeholder="Enter short description"></textarea>
@@ -58,6 +60,7 @@
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
+
                                         <div class="mb-3 mt-3">
                                             <label form="description" class="form-label"> description</label>
                                             <textarea class="form-control" name="description" placeholder="Enter description"></textarea>
@@ -65,6 +68,7 @@
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
+
                                         <div class="mb-3 mt-3">
                                             <label form="regular_price" class="form-label">Regular price</label>
                                             <input type="text" name="regular_price" class="form-control" placeholder="Enter regular price" wire:model="slug" />
@@ -72,6 +76,7 @@
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
+
                                         <div class="mb-3 mt-3">
                                             <label form="sale_price" class="form-label">Sale price</label>
                                             <input type="text" name="sale_price" class="form-control" placeholder="Enter category slug" wire:model="slug" />
@@ -79,6 +84,7 @@
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
+
                                         <div class="mb-3 mt-3">
                                             <label form="sku" class="form-label">SKU</label>
                                             <input type="text" name="sku" class="form-control" placeholder="Enter category slug" wire:model="slug" />
@@ -86,6 +92,7 @@
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
+
                                         <div class="mb-3 mt-3">
                                             <label form="stock_status" class="form-label">Stock Status</label>
                                             <select class="form-control">
@@ -96,6 +103,7 @@
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
+
                                         <div class="mb-3 mt-3">
                                             <label form="featured" class="form-label">Featured</label>
                                             <select class="form-control" name="featured">
@@ -106,6 +114,33 @@
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
+
+                                        <div class="mb-3 mt-3">
+                                            <label form="quantity" class="form-label">Quantity</label>
+                                            <input type="text" name="quantity" class="form-control" placeholder="Enter product quantity" wire:model="slug" />
+                                            @error('slug')
+                                                <p class="text-danger">{{$message}}</p>
+                                            @enderror
+                                        </div>
+
+                                        <div class="mb-3 mt-3">
+                                            <label form="image" class="form-label">Image</label>
+                                            <input type="file" name="image" class="form-control" />
+                                            @error('slug')
+                                                <p class="text-danger">{{$message}}</p>
+                                            @enderror
+                                        </div>
+
+                                        <div class="mb-3 mt-3">
+                                            <label form="category_id" class="form-label">Category</label>
+                                            <select class="form-control" name="category_id">
+                                                <option value="">Select Category</option>
+                                            </select>
+                                            @error('slug')
+                                                <p class="text-danger">{{$message}}</p>
+                                            @enderror
+                                        </div>
+                                        
                                         <button type="submit" class="btn btn-primary float-end">submit</button>
                                    </form> 
                             </div>
