@@ -36,10 +36,10 @@
                                 @if(Session::has('message'))
                                     <div class="alert alert-success" role="alert">{{session::get('message')}}</div>
                                 @endif
-                                   <form wire:submit.prevent="storeCategory">
+                                   <form wire:submit.prevent="addProduct">
                                         <div class="mb-3 mt-3">
                                             <label form="name" class="form-label">Name</label>
-                                            <input type="text" name="name" class="form-control" placeholder="Enter category name" wire:model="name" wire:keyup="generateSlug" />
+                                            <input type="text" name="name" class="form-control" placeholder="Enter product name" wire:model="name" wire:keyup="generateSlug" />
                                             @error('name')
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
@@ -47,7 +47,7 @@
 
                                         <div class="mb-3 mt-3">
                                             <label form="slug" class="form-label">Slug</label>
-                                            <input type="text" name="slug" class="form-control" placeholder="Enter category slug" wire:model="slug" />
+                                            <input type="text" name="slug" class="form-control" placeholder="Enter product slug" wire:model="slug" />
                                             @error('slug')
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
@@ -126,6 +126,9 @@
                                         <div class="mb-3 mt-3">
                                             <label form="image" class="form-label">Image</label>
                                             <input type="file" name="image" class="form-control" wire:model="image"/>
+                                            @if($image)
+                                                <img src="{{$image->temporaryUrl()}}" width="120" />
+                                            @endif
                                             @error('image')
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
@@ -135,6 +138,9 @@
                                             <label form="category_id" class="form-label" >Category</label>
                                             <select class="form-control" name="category_id" wire:model="category_id">
                                                 <option value="">Select Category</option>
+                                                @foreach($this->categories as $category)
+                                                    <option value="{{$category->id}}">{{$category->name}}</option>
+                                                @endforeach
                                             </select>
                                             @error('category_id')
                                                 <p class="text-danger">{{$message}}</p>

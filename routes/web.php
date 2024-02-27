@@ -15,6 +15,7 @@ use App\Livewire\SearchComponent;
 use App\Livewire\WishlistComponent;
 use App\Livewire\Admin\AdminCategoriesComponent;
 use App\Livewire\Admin\AdminProductComponent;
+use App\Livewire\Admin\AdminAddProductComponent;
 
     
 /*
