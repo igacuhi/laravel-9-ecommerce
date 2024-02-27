@@ -55,92 +55,92 @@
 
                                         <div class="mb-3 mt-3">
                                             <label form="short_description" class="form-label">Short description</label>
-                                            <textarea class="form-control" name="short_description" placeholder="Enter short description"></textarea>
-                                            @error('slug')
+                                            <textarea class="form-control" name="short_description" placeholder="Enter short description" wire:model="short_description"></textarea>
+                                            @error('short_description')
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
 
                                         <div class="mb-3 mt-3">
                                             <label form="description" class="form-label"> description</label>
-                                            <textarea class="form-control" name="description" placeholder="Enter description"></textarea>
-                                            @error('slug')
+                                            <textarea class="form-control" name="description" placeholder="Enter description" wire:model="description"></textarea>
+                                            @error('description')
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
 
                                         <div class="mb-3 mt-3">
                                             <label form="regular_price" class="form-label">Regular price</label>
-                                            <input type="text" name="regular_price" class="form-control" placeholder="Enter regular price" wire:model="slug" />
-                                            @error('slug')
+                                            <input type="text" name="regular_price" class="form-control" placeholder="Enter regular price" wire:model="regular_price" />
+                                            @error('regular_price')
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
 
                                         <div class="mb-3 mt-3">
                                             <label form="sale_price" class="form-label">Sale price</label>
-                                            <input type="text" name="sale_price" class="form-control" placeholder="Enter category slug" wire:model="slug" />
-                                            @error('slug')
+                                            <input type="text" name="sale_price" class="form-control" placeholder="Enter sale price" wire:model="sale_price" />
+                                            @error('sale_price')
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
 
                                         <div class="mb-3 mt-3">
                                             <label form="sku" class="form-label">SKU</label>
-                                            <input type="text" name="sku" class="form-control" placeholder="Enter category slug" wire:model="slug" />
-                                            @error('slug')
+                                            <input type="text" name="sku" class="form-control" placeholder="Enter SKU" wire:model="sku" />
+                                            @error('sku')
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
 
                                         <div class="mb-3 mt-3">
-                                            <label form="stock_status" class="form-label">Stock Status</label>
+                                            <label form="stock_status" class="form-label" wire:model="stock_status">Stock Status</label>
                                             <select class="form-control">
                                                 <option value="instock">InStock</option>
                                                 <option value="outofstock">out of stock</option>
                                             </select>
-                                            @error('slug')
+                                            @error('stock_status')
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
 
                                         <div class="mb-3 mt-3">
-                                            <label form="featured" class="form-label">Featured</label>
+                                            <label form="featured" class="form-label" wire:model="featured">Featured</label>
                                             <select class="form-control" name="featured">
                                                 <option value="0">No</option>
                                                 <option value="1">Yes</option>
                                             </select>
-                                            @error('slug')
+                                            @error('featured')
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
 
                                         <div class="mb-3 mt-3">
                                             <label form="quantity" class="form-label">Quantity</label>
-                                            <input type="text" name="quantity" class="form-control" placeholder="Enter product quantity" wire:model="slug" />
-                                            @error('slug')
+                                            <input type="text" name="quantity" class="form-control" placeholder="Enter product quantity" wire:model="quantity" />
+                                            @error('quantity')
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
 
                                         <div class="mb-3 mt-3">
                                             <label form="image" class="form-label">Image</label>
-                                            <input type="file" name="image" class="form-control" />
-                                            @error('slug')
+                                            <input type="file" name="image" class="form-control" wire:model="image"/>
+                                            @error('image')
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
 
                                         <div class="mb-3 mt-3">
-                                            <label form="category_id" class="form-label">Category</label>
-                                            <select class="form-control" name="category_id">
+                                            <label form="category_id" class="form-label" >Category</label>
+                                            <select class="form-control" name="category_id" wire:model="category_id">
                                                 <option value="">Select Category</option>
                                             </select>
-                                            @error('slug')
+                                            @error('category_id')
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
-                                        
+
                                         <button type="submit" class="btn btn-primary float-end">submit</button>
                                    </form> 
                             </div>
