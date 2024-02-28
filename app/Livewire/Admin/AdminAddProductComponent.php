@@ -69,6 +69,7 @@ class AdminAddProductComponent extends Component
         $product->save();
         session()->flash('message','product has been added!');
  }
+ 
     public function render()
     {
         $categories = Category::orderBy('name','ASC')->get();
