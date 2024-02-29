@@ -16,6 +16,7 @@ use App\Livewire\WishlistComponent;
 use App\Livewire\Admin\AdminCategoriesComponent;
 use App\Livewire\Admin\AdminProductComponent;
 use App\Livewire\Admin\AdminAddProductComponent;
+use App\Livewire\Admin\AdminEditProductComponent;
 
     
 /*
@@ -62,6 +63,7 @@ Route::middleware(['auth','authadmin'])->group(function(){
     Route::get('/admin/category/edit/{category_id}',AdminEditCategoryComponent::class)->name('admin.category.edit');
     Route::get('/admin/products',AdminProductComponent::class)->name('admin.products');
     Route::get('/admin/product/add',AdminAddProductComponent::class)->name('admin.product.add');
+    Route::get('/admin/product/{product_id}',AdminEditProductComponent::class)->name('admin.product.edit');
 });
 
 Route::view('profile', 'profile')
