@@ -81,7 +81,7 @@ class AdminEditProductComponent extends Component
         $product->stock_status = $this->stock_status;
         $product->featured = $this->featured;
         $product->quantity = $this->quantity;
-        if($this->newImage)
+        if($this->newimage)
         {
             unlink('assets/imgs/products/'.$product->image);
             $imageName = time().'.'.$this->newimage->extension();
