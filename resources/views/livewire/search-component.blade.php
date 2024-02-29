@@ -77,7 +77,7 @@
                                                 <a href="{{ route('product.details', ['slug' => $product->slug]) }}">
                                                 </a>
                                                 @endif                                               
-                                                 <img class="default-img" src="{{asset('assets/imgs/shop/product-3-1.jpg')}}" alt="">
+                                                 <img class="default-img" src="{{asset('assets/imgs/products/')}}/{{$product->image}}" alt="">
                                                 <img class="hover-img" src="{{asset('assets/imgs/shop/product-3-2.jpg')}}" alt="">
                                             </a>
                                         </div>

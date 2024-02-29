@@ -22,7 +22,7 @@
                                         <div class="product-image-slider">
                                             <figure class="border-radius-10">
                                                 @if ($product)
-                                                <img src="{{asset('assets/imgs/shop/product-')}}{{$product->id}}-2.jpg'" alt="product image">
+                                                <img src="{{asset('assets/imgs/products/')}}/{{$product->image}}" alt="product image">
                                                 @endif
                                             </figure>
                                             <figure class="border-radius-10">

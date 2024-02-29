@@ -14,7 +14,7 @@
                                                 <a href="{{ route('product.details', ['slug' => $item->model->slug]) }}">
                                                 </a> 
                                                 @endif
-                                                        <img alt="{{$item->model->name}}" src="{{asset('assets/imgs/shop/product-')}}{{$item->model->id}}-1.jpg"></a>
+                                                        <img alt="{{$item->model->name}}" src="{{asset('assets/imgs/products/')}}/{{$product->image}}"></a>
                                                 </div>
                                                 <div class="shopping-cart-title">
                                                 @if($product)
