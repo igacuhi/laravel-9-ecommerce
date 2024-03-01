@@ -76,7 +76,6 @@
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
-
                                         <div class="mb-3 mt-3">
                                             <label form="sale_price" class="form-label">Sale price</label>
                                             <input type="text" name="sale_price" class="form-control" placeholder="Enter sale price" wire:model="sale_price" />
@@ -84,7 +83,6 @@
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
-
                                         <div class="mb-3 mt-3">
                                             <label form="sku" class="form-label">SKU</label>
                                             <input type="text" name="sku" class="form-control" placeholder="Enter SKU" wire:model="sku" />
@@ -146,7 +144,6 @@
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div>
-
                                         <button type="submit" class="btn btn-primary float-end">submit</button>
                                    </form> 
                             </div>
