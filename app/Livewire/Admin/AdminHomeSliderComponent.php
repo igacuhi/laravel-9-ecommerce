@@ -8,6 +8,7 @@ class AdminHomeSliderComponent extends Component
 {
     public function render()
     {
-        return view('livewire.admin.admin-home-slider-component');
+        $slides = HomeSlider::orderBy('created_at','DESC')->get();
+        return view('livewire.admin.admin-home-slider-component',['slides' => $slides]);
     }
 }
