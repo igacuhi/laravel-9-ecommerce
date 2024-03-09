@@ -25,6 +25,20 @@ class AdminAddHomeSlideComponent extends Component
             'status' =>'required',
             'image'  =>'required',
         ]);
+
+        $slide = new HomeSlider();
+        $slide->top_title = $this->top_title;
+        $slide->title = $this->title;
+        $slide->sub_title = $this->sub_title;
+        $slide->offer = $this->offer;
+        $slide->link = $this->link;
+        $slide->status = $this->status;
+        $imageName = Carbon::now()->timestamp.'.'.$this->image->extension();
+        $this->image->storeAS('slider',$imageName);
+        $slide->image = $imageName;
+        $slide->save();
+        session()->flash('message','slide has been added');
+
     }
     public function render()
     {

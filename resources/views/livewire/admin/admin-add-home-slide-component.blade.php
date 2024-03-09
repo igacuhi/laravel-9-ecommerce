@@ -37,7 +37,7 @@
                                 @if(Session::has('message'))
                                     <div class="alert alert-success" role="alert">{{session::get('message')}}</div>
                                 @endif
-                                   <form wire:submit.prevent="storeCategory">
+                                   <form wire:submit.prevent="addSlide">
                                         <div class="mb-3 mt-3">
                                             <label class="form-label">Top Title</label>
                                             <input type="text" class="form-control" placeholder="Enter slide top title" wire:model="top_title"  />
@@ -54,19 +54,19 @@
                                         </div>
                                         <div class="mb-3 mt-3">
                                             <label  class="form-label">Sub Title</label>
-                                            <input type="text"  class="form-control" placeholder="Enter slide title" wire:model="sub_title" />
+                                            <input type="text"  class="form-control" placeholder="Enter slide sub title" wire:model="sub_title" />
                                             @error('sub_title')
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div><div class="mb-3 mt-3">
                                             <label  class="form-label">offer</label>
-                                            <input type="text"  class="form-control" placeholder="Enter slide title" wire:model="offer" />
+                                            <input type="text"  class="form-control" placeholder="Enter offer" wire:model="offer" />
                                             @error('offer')
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
                                         </div><div class="mb-3 mt-3">
                                             <label  class="form-label">Link</label>
-                                            <input type="text"  class="form-control" placeholder="Enter slide title" wire:model="link" />
+                                            <input type="text"  class="form-control" placeholder="Enter slide link" wire:model="link" />
                                             @error('link')
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
@@ -84,6 +84,9 @@
                                         <div class="mb-3 mt-3">
                                             <label  class="form-label">Image</label>
                                             <input type="file" class="form-control" wire:model="image" />
+                                            @if($image)
+                                                <img src="{{$image->temporaryUrl()}}" width="100" />
+                                            @endif
                                             @error('image')
                                                 <p class="text-danger">{{$message}}</p>
                                             @enderror
