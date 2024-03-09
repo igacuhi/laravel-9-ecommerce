@@ -52,7 +52,7 @@
                                     </thead>
                                     <tbody>
                                         @php
-                                            $i = ($slides->currentPage()-1)*$slides->perPage();
+                                            $i = 0;
                                         @endphp
                                         @foreach($slides as $slide)
                                         <tr>
